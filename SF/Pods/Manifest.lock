@@ -1,0 +1,13 @@
+PODS:
+  - HMSegmentedControl (1.5.2)
+  - RDVTabBarController (1.1.9)
+
+DEPENDENCIES:
+  - HMSegmentedControl
+  - RDVTabBarController
+
+SPEC CHECKSUMS:
+  HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+
+COCOAPODS: 0.38.2
