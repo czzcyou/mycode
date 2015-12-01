@@ -19,17 +19,9 @@
 #import "QuestionViewController.h"
 #import "HMSegmentedControl.h"
 
-#import "ZZNewestViewController.h"
-#import "ZZHottestViewController.h"
-#import "ZZunAnsweredViewController.h"
 
-@interface QuestionViewController ()<UIScrollViewDelegate>
-
-@property (nonatomic, strong) UIScrollView *helperScrollView;
+@interface QuestionViewController ()
 @property (nonatomic, strong) HMSegmentedControl *segmentedControl;
-@property (nonatomic, strong) ZZNewestViewController *newestViewController;
-@property (nonatomic, strong) ZZHottestViewController *hottestViewController;
-@property (nonatomic, strong) ZZunAnsweredViewController *unAnsweredViewController;
 
 
 @end
@@ -42,7 +34,9 @@
     
     HMSegmentedControl *segmentedControl = [[HMSegmentedControl alloc] initWithSectionTitles:@[@"最新的", @"热门的", @"未回答"]];
     
-    segmentedControl.frame = CGRectMake(0, 0, self.view.bounds.size.width, 40);;
+    segmentedControl.frame = CGRectMake(0, 0, self.view.bounds.size.width, 40);
+    //没有这个在标签切换中显示不出来，以navigation作为容器就必须这样
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 
     [self.view addSubview:segmentedControl];
     
