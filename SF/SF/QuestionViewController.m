@@ -33,15 +33,12 @@
     // Do any additional setup after loading the view.
     
     HMSegmentedControl *segmentedControl = [[HMSegmentedControl alloc] initWithSectionTitles:@[@"最新的", @"热门的", @"未回答"]];
-    
+    //这里之所以要设置为0，0是因为segmentedControl当作tableview的子view
     segmentedControl.frame = CGRectMake(0, 0, self.view.bounds.size.width, 40);
     //没有这个在标签切换中显示不出来，以navigation作为容器就必须这样
     self.edgesForExtendedLayout = UIRectEdgeNone;
 
     [self.view addSubview:segmentedControl];
-    
-
-    
     
     
     
