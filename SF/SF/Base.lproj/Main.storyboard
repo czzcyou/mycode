@@ -24,7 +24,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5D0-72-Chq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1716" y="571"/>
+            <point key="canvasLocation" x="-3196" y="-413"/>
         </scene>
         <!--搜索-->
         <scene sceneID="gI8-M5-yQm">
@@ -41,7 +41,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9A-uX-Sm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-588" y="1122"/>
+            <point key="canvasLocation" x="-2068" y="138"/>
         </scene>
         <!--我的-->
         <scene sceneID="z2g-wX-mzu">
@@ -58,7 +58,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSR-68-lGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-588" y="2034"/>
+            <point key="canvasLocation" x="-2060" y="970"/>
         </scene>
         <!--发现-->
         <scene sceneID="1eY-EE-5KV">
@@ -75,7 +75,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QFk-Sb-FTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-588" y="336"/>
+            <point key="canvasLocation" x="-2068" y="-648"/>
         </scene>
         <!--文章-->
         <scene sceneID="ue3-EW-PL5">
@@ -92,7 +92,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TeG-2A-4eq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-588" y="-718"/>
+            <point key="canvasLocation" x="-2068" y="-1702"/>
         </scene>
         <!--问题-->
         <scene sceneID="kME-CI-CVx">
@@ -109,7 +109,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAr-RJ-Emi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-588" y="-1573"/>
+            <point key="canvasLocation" x="-2068" y="-2557"/>
         </scene>
         <!--问题-->
         <scene sceneID="GzA-mt-7gP">
@@ -128,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZfA-yI-MqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="460" y="-1573"/>
+            <point key="canvasLocation" x="-1020" y="-2557"/>
         </scene>
         <!--文章-->
         <scene sceneID="2aD-cE-b2G">
@@ -147,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sis-lh-2Gd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="-718"/>
+            <point key="canvasLocation" x="-1028" y="-1702"/>
         </scene>
         <!--发现-->
         <scene sceneID="fmB-pd-Mbq">
@@ -166,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nom-eH-GLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="460" y="336"/>
+            <point key="canvasLocation" x="-1020" y="-648"/>
         </scene>
         <!--搜索-->
         <scene sceneID="GdF-tf-jT5">
@@ -185,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYT-Ii-v12" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="460" y="1122"/>
+            <point key="canvasLocation" x="-1020" y="138"/>
         </scene>
         <!--我的-->
         <scene sceneID="MQX-Kf-KbI">
@@ -204,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3U1-qo-Wkm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="2034"/>
+            <point key="canvasLocation" x="-1020" y="970"/>
         </scene>
     </scenes>
 </document>

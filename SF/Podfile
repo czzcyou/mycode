@@ -1,2 +1,6 @@
 pod 'RDVTabBarController'
 pod 'HMSegmentedControl'
+pod 'AFNetworking'
+pod 'JSONModel'
+pod 'MBProgressHUD'
+pod 'MJRefresh'

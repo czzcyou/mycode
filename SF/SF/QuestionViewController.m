@@ -8,21 +8,23 @@
 
 
 
-
-
-
-
-
-
 /////////
 
 #import "QuestionViewController.h"
 #import "HMSegmentedControl.h"
+#import "NewestViewController.h"
+#import "HottestViewController.h"
+#import "UnanswerViewController.h"
 
+@interface QuestionViewController ()<UIScrollViewDelegate>
 
-@interface QuestionViewController ()
 @property (nonatomic, strong) HMSegmentedControl *segmentedControl;
 
+@property (nonatomic, strong) UIScrollView *helperScrollView;
+
+@property (nonatomic, strong) NewestViewController *newestViewController;
+@property (nonatomic, strong) HottestViewController *hottestViewController;
+@property (nonatomic, strong) UnanswerViewController *UnanswerViewController;
 
 @end
 
@@ -39,9 +41,41 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
 
     [self.view addSubview:segmentedControl];
+    [segmentedControl setIndexChangeBlock:^(NSInteger index) {
+        CGPoint point = CGPointMake(index * self.view.bounds.size.width, 0);
+        self.helperScrollView.delegate = nil;
+        [self.helperScrollView setContentOffset:point animated:NO];
+        self.helperScrollView.delegate = self;
+    }];
+    
+    self.helperScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, segmentedControl.frame.size.height, self.view.bounds.size.width, self.view.bounds.size.height - segmentedControl.frame.size.height - 49 )];
+    [self.view addSubview:self.helperScrollView];
+    self.helperScrollView.contentSize = CGSizeMake(self.view.bounds.size.width * 3, self.view.bounds.size.height - segmentedControl.frame.size.height - 65 );
+    self.helperScrollView.pagingEnabled = YES;
+    self.helperScrollView.delegate = self;
+    [self.view addSubview:self.helperScrollView];
     
     
+    NewestViewController *newestViewController = [[NewestViewController alloc] init];
+    newestViewController.view.frame = CGRectMake(0, 0, self.helperScrollView.bounds.size.width, self.helperScrollView.bounds.size.height);
     
+    
+    newestViewController.tableView.frame = newestViewController.view.bounds;
+    
+    
+    self.newestViewController = newestViewController;
+    [self.helperScrollView addSubview:newestViewController.view];
+    
+    HottestViewController *hottesetViewController = [[HottestViewController alloc] init];
+    hottesetViewController.view.frame = CGRectMake(CGRectGetMaxX(newestViewController.view.frame), 0, self.helperScrollView.bounds.size.width, self.helperScrollView.bounds.size.height);
+    self.hottestViewController = hottesetViewController;
+    [self.helperScrollView addSubview:hottesetViewController.view];
+    
+    
+    UnanswerViewController *unAnswerViewController = [[UnanswerViewController alloc] init];
+    unAnswerViewController.view.frame = CGRectMake(CGRectGetMaxX(hottesetViewController.view.frame), 0, self.helperScrollView.bounds.size.width, self.helperScrollView.bounds.size.height);
+    self.UnanswerViewController = unAnswerViewController;
+    [self.helperScrollView addSubview:unAnswerViewController.view];
     
 
 
