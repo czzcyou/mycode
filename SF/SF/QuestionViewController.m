@@ -9,14 +9,16 @@
 
 
 /////////
-
+#import "QuestionDetailViewController.h"
+#import "AskViewController.h"
 #import "QuestionViewController.h"
 #import "HMSegmentedControl.h"
 #import "NewestViewController.h"
 #import "HottestViewController.h"
 #import "UnanswerViewController.h"
+#import "NewestViewController.h"
 
-@interface QuestionViewController ()<UIScrollViewDelegate>
+@interface QuestionViewController ()<UIScrollViewDelegate,NewestViewControllerDelegate>
 
 @property (nonatomic, strong) HMSegmentedControl *segmentedControl;
 
@@ -79,8 +81,13 @@
     
 
 
-    
-   
+    UIButton *askButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    askButton.backgroundColor = [UIColor clearColor];
+    [askButton setTitle:@"提问" forState:UIControlStateNormal];
+    askButton.titleLabel.font = [UIFont systemFontOfSize:17];
+    askButton.frame = CGRectMake(0, 0, 35, 17);
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:askButton];
+    [askButton addTarget:self action:@selector(askButtonDidPressed) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -98,5 +105,35 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+- (void)askButtonDidPressed{
+    AskViewController *askViewController = [[AskViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:askViewController];
+    [self presentViewController:navigationController animated:YES completion:nil];
+     askViewController.title=@"提问";
+    
+    
+    //跳进去如何跳出来是个问题
+    
+}
+
+- (void)newestViewController:(NewestViewController *)newestViewController
+    didPressedWithQuestionId:(NSString *)questionid{
+    if (questionid.length == 0) {
+        return;
+    }
+    
+    QuestionDetailViewController *questionDetailViewController = [[QuestionDetailViewController alloc] initWithQuestionId:questionid];
+    
+    [self.navigationController pushViewController:questionDetailViewController animated:NO];
+    
+    
+    
+    
+    
+}
+    
+    
 
 @end

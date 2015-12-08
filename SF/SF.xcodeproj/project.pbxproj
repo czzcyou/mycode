@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6531C9FD1C1719800088CDC9 /* AskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531C9FC1C1719800088CDC9 /* AskViewController.m */; };
+		6531CA001C171F9E0088CDC9 /* QuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531C9FF1C171F9E0088CDC9 /* QuestionDetailViewController.m */; };
 		6538468F1C0C848F00561CFA /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6538468E1C0C848F00561CFA /* QuestionViewController.m */; };
 		653846921C0C84BA00561CFA /* ArticalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653846911C0C84BA00561CFA /* ArticalViewController.m */; };
 		653846981C0C84FB00561CFA /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653846971C0C84FB00561CFA /* FindViewController.m */; };
@@ -54,6 +56,10 @@
 		130EE83BA7CCE95CD9DEC7D4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F93FF4B9281E8AFB31A9A6B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3C75B1F19083814A041A3D7A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6531C9FB1C1719800088CDC9 /* AskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskViewController.h; sourceTree = "<group>"; };
+		6531C9FC1C1719800088CDC9 /* AskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskViewController.m; sourceTree = "<group>"; };
+		6531C9FE1C171F9E0088CDC9 /* QuestionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDetailViewController.h; sourceTree = "<group>"; };
+		6531C9FF1C171F9E0088CDC9 /* QuestionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDetailViewController.m; sourceTree = "<group>"; };
 		6538468D1C0C848F00561CFA /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		6538468E1C0C848F00561CFA /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		653846901C0C84BA00561CFA /* ArticalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticalViewController.h; sourceTree = "<group>"; };
@@ -213,6 +219,10 @@
 				65CC6B7F1C13440400DA50AE /* HottestViewController.m */,
 				65CC6B811C13441800DA50AE /* UnanswerViewController.h */,
 				65CC6B821C13441800DA50AE /* UnanswerViewController.m */,
+				6531C9FB1C1719800088CDC9 /* AskViewController.h */,
+				6531C9FC1C1719800088CDC9 /* AskViewController.m */,
+				6531C9FE1C171F9E0088CDC9 /* QuestionDetailViewController.h */,
+				6531C9FF1C171F9E0088CDC9 /* QuestionDetailViewController.m */,
 			);
 			path = SF;
 			sourceTree = "<group>";
@@ -414,6 +424,7 @@
 				6563FAB81C13F0E100399A35 /* ZZNewestCell.m in Sources */,
 				653846A11C0C853500561CFA /* MyViewController.m in Sources */,
 				65CC6B831C13441800DA50AE /* UnanswerViewController.m in Sources */,
+				6531C9FD1C1719800088CDC9 /* AskViewController.m in Sources */,
 				659A299B1C0C74F200B36B99 /* AppDelegate.m in Sources */,
 				6563FABE1C13F1A400399A35 /* ZZBaseResponseModel.m in Sources */,
 				653846981C0C84FB00561CFA /* FindViewController.m in Sources */,
@@ -422,6 +433,7 @@
 				65CC6B801C13440400DA50AE /* HottestViewController.m in Sources */,
 				6563FAB21C13EEB700399A35 /* ZZHttpClient.m in Sources */,
 				659A29981C0C74F200B36B99 /* main.m in Sources */,
+				6531CA001C171F9E0088CDC9 /* QuestionDetailViewController.m in Sources */,
 				6563FAAE1C13DFE700399A35 /* EXTScope.m in Sources */,
 				6538469B1C0C850D00561CFA /* SearchViewController.m in Sources */,
 				6563FAA81C13CD0100399A35 /* ZZNewestListItem.m in Sources */,

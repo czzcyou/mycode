@@ -35,6 +35,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //之前没有在初始化数字所以数据没有显示出来
+    self.newestListItems=[[NSMutableArray alloc]init];
     self.view.backgroundColor = [UIColor clearColor];
     self.tableView = [[UITableView alloc] init];
     self.tableView.delegate = self;
