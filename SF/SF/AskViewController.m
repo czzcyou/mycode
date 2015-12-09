@@ -32,8 +32,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
+/* AskViewController *askViewController = [[AskViewController alloc] init];
+ UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:askViewController];
+ [self presentViewController:navigationController animated:YES completion:nil];
+ askViewController.title=@"提问";
+ 
+ //navigationcontroller用来管理viewcontroller，每个viewcontroller有一个navigationcontroller属性，当前显示的view对应的viewcontroller就会显示对其navigationcontroller属性用navigationcontroller赋值
+*/
 - (void)buttonDidPressed{
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     
