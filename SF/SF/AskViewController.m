@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(0, 0, 44, 44);
+    [button setTitle:@"关闭" forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont systemFontOfSize:18];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
+    [button addTarget:self action:@selector(buttonDidPressed) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +32,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+- (void)buttonDidPressed{
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    
+}
 /*
 #pragma mark - Navigation
 
