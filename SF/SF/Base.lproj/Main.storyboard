@@ -97,8 +97,8 @@
         <!--问题-->
         <scene sceneID="kME-CI-CVx">
             <objects>
-                <navigationController id="Htc-HM-wtO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="问题" id="wwp-Cl-3Oy"/>
+                <navigationController id="Htc-HM-wtO" customClass="NavViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="问题" image="icon_tab_wenda_active" selectedImage="icon_tab_wenda_active" id="wwp-Cl-3Oy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="knS-XD-Ngo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -207,4 +207,7 @@
             <point key="canvasLocation" x="-1020" y="970"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_tab_wenda_active" width="25" height="25"/>
+    </resources>
 </document>

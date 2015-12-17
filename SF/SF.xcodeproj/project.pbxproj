@@ -34,6 +34,7 @@
 		65CC6B7D1C1343EF00DA50AE /* NewestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC6B7C1C1343EF00DA50AE /* NewestViewController.m */; };
 		65CC6B801C13440400DA50AE /* HottestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC6B7F1C13440400DA50AE /* HottestViewController.m */; };
 		65CC6B831C13441800DA50AE /* UnanswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC6B821C13441800DA50AE /* UnanswerViewController.m */; };
+		65F9D2721C23131500AEA6B9 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F9D2711C23131500AEA6B9 /* NavViewController.m */; };
 		F3915C1635E8D6537E55B270 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 130EE83BA7CCE95CD9DEC7D4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +115,8 @@
 		65CC6B7F1C13440400DA50AE /* HottestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HottestViewController.m; sourceTree = "<group>"; };
 		65CC6B811C13441800DA50AE /* UnanswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnanswerViewController.h; sourceTree = "<group>"; };
 		65CC6B821C13441800DA50AE /* UnanswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnanswerViewController.m; sourceTree = "<group>"; };
+		65F9D2701C23131500AEA6B9 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		65F9D2711C23131500AEA6B9 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +208,8 @@
 				659A29A21C0C74F200B36B99 /* Assets.xcassets */,
 				659A29A41C0C74F200B36B99 /* LaunchScreen.storyboard */,
 				659A29A71C0C74F200B36B99 /* Info.plist */,
+				65F9D2701C23131500AEA6B9 /* NavViewController.h */,
+				65F9D2711C23131500AEA6B9 /* NavViewController.m */,
 				659A29961C0C74F200B36B99 /* Supporting Files */,
 				6563FAAF1C13E00000399A35 /* metamacros.h */,
 				6563FAAC1C13DFE700399A35 /* EXTScope.h */,
@@ -430,6 +435,7 @@
 			files = (
 				653846921C0C84BA00561CFA /* ArticalViewController.m in Sources */,
 				659A299E1C0C74F200B36B99 /* ViewController.m in Sources */,
+				65F9D2721C23131500AEA6B9 /* NavViewController.m in Sources */,
 				6563FAB81C13F0E100399A35 /* ZZNewestCell.m in Sources */,
 				653846A11C0C853500561CFA /* MyViewController.m in Sources */,
 				65CC6B831C13441800DA50AE /* UnanswerViewController.m in Sources */,
