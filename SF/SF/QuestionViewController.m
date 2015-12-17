@@ -62,6 +62,9 @@
     newestViewController.view.frame = CGRectMake(0, 0, self.helperScrollView.bounds.size.width, self.helperScrollView.bounds.size.height);
     
     
+   // newestViewController.delegate=self;
+    
+    
     newestViewController.tableView.frame = newestViewController.view.bounds;
     
     

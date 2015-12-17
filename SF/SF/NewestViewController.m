@@ -87,7 +87,12 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    ZZNewestListItemModel *newestListItemModel = self.newestListItems[indexPath.row];
+    NSString *newestListItemId = newestListItemModel.newestListItemID;
     
+    if ([self.delegate respondsToSelector:@selector(newestViewController:didPressedWithQuestionId:)]) {
+        [self.delegate newestViewController:self didPressedWithQuestionId:newestListItemId];
+    }
     
 }
 
