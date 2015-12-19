@@ -8,7 +8,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="6Qy-2l-5yc">
             <objects>
-                <tabBarController id="xZ1-eD-PxR" sceneMemberID="viewController">
+                <tabBarController id="xZ1-eD-PxR" customClass="TabBarController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="CJ1-O6-8bc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -94,11 +94,11 @@
             </objects>
             <point key="canvasLocation" x="-2068" y="-1702"/>
         </scene>
-        <!--问题-->
+        <!-- 问题-->
         <scene sceneID="kME-CI-CVx">
             <objects>
                 <navigationController id="Htc-HM-wtO" customClass="NavViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="问题" image="icon_tab_wenda_active" selectedImage="icon_tab_wenda_active" id="wwp-Cl-3Oy"/>
+                    <tabBarItem key="tabBarItem" title=" 问题" image="icon_tab_wenda" selectedImage="icon_tab_wenda_active" id="wwp-Cl-3Oy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="knS-XD-Ngo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -208,6 +208,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_tab_wenda" width="25" height="25"/>
         <image name="icon_tab_wenda_active" width="25" height="25"/>
     </resources>
 </document>
