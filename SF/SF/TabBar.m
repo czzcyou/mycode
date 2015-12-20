@@ -8,6 +8,7 @@
 
 #import "TabBar.h"
 #import "TabBarButton.h"   
+#import "UIView+Frame.h"
 
 @interface TabBar ()
 

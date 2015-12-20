@@ -23,10 +23,9 @@
 		6563FAB81C13F0E100399A35 /* ZZNewestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6563FAB51C13F0E100399A35 /* ZZNewestCell.m */; };
 		6563FAB91C13F0E100399A35 /* ZZNewestVoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6563FAB71C13F0E100399A35 /* ZZNewestVoteView.m */; };
 		6563FABE1C13F1A400399A35 /* ZZBaseResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6563FABD1C13F1A400399A35 /* ZZBaseResponseModel.m */; };
-		6567B8241C252FEC00CA7002 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567B8231C252FEC00CA7002 /* TabBarController.m */; };
-		6567B8271C25316000CA7002 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567B8261C25316000CA7002 /* TabBar.m */; };
-		6567B82A1C2531F800CA7002 /* TabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567B8291C2531F800CA7002 /* TabBarButton.m */; };
-		6567B82D1C25440B00CA7002 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567B82C1C25440B00CA7002 /* UIView+Frame.m */; };
+		6567B8301C2579EE00CA7002 /* SFTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567B82F1C2579EE00CA7002 /* SFTabBarButton.m */; };
+		6567B8331C257A2800CA7002 /* SFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567B8321C257A2800CA7002 /* SFTabBarViewController.m */; };
+		6567B8361C257A6600CA7002 /* SFTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567B8351C257A6600CA7002 /* SFTabBar.m */; };
 		659A29981C0C74F200B36B99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A29971C0C74F200B36B99 /* main.m */; };
 		659A299B1C0C74F200B36B99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A299A1C0C74F200B36B99 /* AppDelegate.m */; };
 		659A299E1C0C74F200B36B99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A299D1C0C74F200B36B99 /* ViewController.m */; };
@@ -97,14 +96,12 @@
 		6563FAB71C13F0E100399A35 /* ZZNewestVoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZNewestVoteView.m; path = ../../../FakeSegmentFault/MIX/MIX/ZZNewestVoteView.m; sourceTree = "<group>"; };
 		6563FABC1C13F1A400399A35 /* ZZBaseResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZBaseResponseModel.h; path = ../../../FakeSegmentFault/MIX/MIX/ZZBaseResponseModel.h; sourceTree = "<group>"; };
 		6563FABD1C13F1A400399A35 /* ZZBaseResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZBaseResponseModel.m; path = ../../../FakeSegmentFault/MIX/MIX/ZZBaseResponseModel.m; sourceTree = "<group>"; };
-		6567B8221C252FEC00CA7002 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
-		6567B8231C252FEC00CA7002 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
-		6567B8251C25316000CA7002 /* TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBar.h; sourceTree = "<group>"; };
-		6567B8261C25316000CA7002 /* TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar.m; sourceTree = "<group>"; };
-		6567B8281C2531F800CA7002 /* TabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarButton.h; sourceTree = "<group>"; };
-		6567B8291C2531F800CA7002 /* TabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarButton.m; sourceTree = "<group>"; };
-		6567B82B1C25440B00CA7002 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		6567B82C1C25440B00CA7002 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		6567B82E1C2579EE00CA7002 /* SFTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTabBarButton.h; sourceTree = SOURCE_ROOT; };
+		6567B82F1C2579EE00CA7002 /* SFTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTabBarButton.m; sourceTree = SOURCE_ROOT; };
+		6567B8311C257A2800CA7002 /* SFTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTabBarViewController.h; sourceTree = "<group>"; };
+		6567B8321C257A2800CA7002 /* SFTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTabBarViewController.m; sourceTree = "<group>"; };
+		6567B8341C257A6600CA7002 /* SFTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTabBar.h; sourceTree = SOURCE_ROOT; };
+		6567B8351C257A6600CA7002 /* SFTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTabBar.m; sourceTree = SOURCE_ROOT; };
 		659A29931C0C74F200B36B99 /* SF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659A29971C0C74F200B36B99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		659A29991C0C74F200B36B99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -199,8 +196,12 @@
 		659A29951C0C74F200B36B99 /* SF */ = {
 			isa = PBXGroup;
 			children = (
-				6567B82B1C25440B00CA7002 /* UIView+Frame.h */,
-				6567B82C1C25440B00CA7002 /* UIView+Frame.m */,
+				6567B8341C257A6600CA7002 /* SFTabBar.h */,
+				6567B8351C257A6600CA7002 /* SFTabBar.m */,
+				6567B82E1C2579EE00CA7002 /* SFTabBarButton.h */,
+				6567B82F1C2579EE00CA7002 /* SFTabBarButton.m */,
+				6567B8311C257A2800CA7002 /* SFTabBarViewController.h */,
+				6567B8321C257A2800CA7002 /* SFTabBarViewController.m */,
 				6563FABC1C13F1A400399A35 /* ZZBaseResponseModel.h */,
 				6563FABD1C13F1A400399A35 /* ZZBaseResponseModel.m */,
 				6563FAB31C13F0E100399A35 /* MacroDefinition.h */,
@@ -252,12 +253,6 @@
 				6531C9FC1C1719800088CDC9 /* AskViewController.m */,
 				6531C9FE1C171F9E0088CDC9 /* QuestionDetailViewController.h */,
 				6531C9FF1C171F9E0088CDC9 /* QuestionDetailViewController.m */,
-				6567B8221C252FEC00CA7002 /* TabBarController.h */,
-				6567B8231C252FEC00CA7002 /* TabBarController.m */,
-				6567B8251C25316000CA7002 /* TabBar.h */,
-				6567B8261C25316000CA7002 /* TabBar.m */,
-				6567B8281C2531F800CA7002 /* TabBarButton.h */,
-				6567B8291C2531F800CA7002 /* TabBarButton.m */,
 			);
 			path = SF;
 			sourceTree = "<group>";
@@ -456,6 +451,7 @@
 				653846921C0C84BA00561CFA /* ArticalViewController.m in Sources */,
 				659A299E1C0C74F200B36B99 /* ViewController.m in Sources */,
 				65F9D2721C23131500AEA6B9 /* NavViewController.m in Sources */,
+				6567B8331C257A2800CA7002 /* SFTabBarViewController.m in Sources */,
 				6563FAB81C13F0E100399A35 /* ZZNewestCell.m in Sources */,
 				653846A11C0C853500561CFA /* MyViewController.m in Sources */,
 				65CC6B831C13441800DA50AE /* UnanswerViewController.m in Sources */,
@@ -465,19 +461,17 @@
 				653846981C0C84FB00561CFA /* FindViewController.m in Sources */,
 				6538468F1C0C848F00561CFA /* QuestionViewController.m in Sources */,
 				6563FAB91C13F0E100399A35 /* ZZNewestVoteView.m in Sources */,
+				6567B8301C2579EE00CA7002 /* SFTabBarButton.m in Sources */,
 				65CC6B801C13440400DA50AE /* HottestViewController.m in Sources */,
 				6563FAB21C13EEB700399A35 /* ZZHttpClient.m in Sources */,
 				659A29981C0C74F200B36B99 /* main.m in Sources */,
 				6555354B1C22DE7400FE6A22 /* ZZQuestionDetailModel.m in Sources */,
 				6555354A1C22DE7400FE6A22 /* ZZAnswerDetailModel.m in Sources */,
 				655535451C22D93A00FE6A22 /* ZZNewestListModel.m in Sources */,
+				6567B8361C257A6600CA7002 /* SFTabBar.m in Sources */,
 				6531CA001C171F9E0088CDC9 /* QuestionDetailViewController.m in Sources */,
 				6563FAAE1C13DFE700399A35 /* EXTScope.m in Sources */,
-				6567B8271C25316000CA7002 /* TabBar.m in Sources */,
-				6567B82D1C25440B00CA7002 /* UIView+Frame.m in Sources */,
 				6538469B1C0C850D00561CFA /* SearchViewController.m in Sources */,
-				6567B8241C252FEC00CA7002 /* TabBarController.m in Sources */,
-				6567B82A1C2531F800CA7002 /* TabBarButton.m in Sources */,
 				6563FAA81C13CD0100399A35 /* ZZNewestListItem.m in Sources */,
 				65CC6B7D1C1343EF00DA50AE /* NewestViewController.m in Sources */,
 			);

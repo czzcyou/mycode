@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="6Qy-2l-5yc">
             <objects>
-                <tabBarController id="xZ1-eD-PxR" customClass="TabBarController" sceneMemberID="viewController">
+                <tabBarController id="xZ1-eD-PxR" customClass="SFTabBarViewController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="CJ1-O6-8bc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -26,11 +26,11 @@
             </objects>
             <point key="canvasLocation" x="-3196" y="-413"/>
         </scene>
-        <!--搜索-->
+        <!--Navigation Controller-->
         <scene sceneID="gI8-M5-yQm">
             <objects>
                 <navigationController id="ISk-yE-dAX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="搜索" id="F4j-Yp-X4a"/>
+                    <tabBarItem key="tabBarItem" title="" id="F4j-Yp-X4a"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="k3C-Fg-Uh6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -41,13 +41,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9A-uX-Sm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2068" y="138"/>
+            <point key="canvasLocation" x="-2200" y="114"/>
         </scene>
-        <!--我的-->
+        <!--Navigation Controller-->
         <scene sceneID="z2g-wX-mzu">
             <objects>
                 <navigationController id="Ff0-Sh-KDH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" id="zRx-15-xUz"/>
+                    <tabBarItem key="tabBarItem" title="" id="zRx-15-xUz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Vh-jw-5Iv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -58,13 +58,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSR-68-lGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2060" y="970"/>
+            <point key="canvasLocation" x="-2208" y="1050"/>
         </scene>
-        <!--发现-->
+        <!--Navigation Controller-->
         <scene sceneID="1eY-EE-5KV">
             <objects>
                 <navigationController id="ki3-A1-zRC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="发现" id="PLD-sl-ogd"/>
+                    <tabBarItem key="tabBarItem" title="" id="PLD-sl-ogd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8YB-eH-VTH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -75,13 +75,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QFk-Sb-FTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2068" y="-648"/>
+            <point key="canvasLocation" x="-2200" y="-648"/>
         </scene>
-        <!--文章-->
+        <!--Navigation Controller-->
         <scene sceneID="ue3-EW-PL5">
             <objects>
                 <navigationController id="9Pd-Db-arD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="文章" id="yMY-8R-oAR"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="" id="yMY-8R-oAR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rXg-4d-FzM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -92,13 +92,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TeG-2A-4eq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2068" y="-1702"/>
+            <point key="canvasLocation" x="-2200" y="-1478"/>
         </scene>
-        <!-- 问题-->
+        <!-- -->
         <scene sceneID="kME-CI-CVx">
             <objects>
                 <navigationController id="Htc-HM-wtO" customClass="NavViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title=" 问题" image="icon_tab_wenda" selectedImage="icon_tab_wenda_active" id="wwp-Cl-3Oy"/>
+                    <tabBarItem key="tabBarItem" title=" " id="wwp-Cl-3Oy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="knS-XD-Ngo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -109,7 +109,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAr-RJ-Emi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2068" y="-2557"/>
+            <point key="canvasLocation" x="-2200" y="-2281"/>
         </scene>
         <!--问题-->
         <scene sceneID="GzA-mt-7gP">
@@ -207,8 +207,4 @@
             <point key="canvasLocation" x="-1020" y="970"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="icon_tab_wenda" width="25" height="25"/>
-        <image name="icon_tab_wenda_active" width="25" height="25"/>
-    </resources>
 </document>
