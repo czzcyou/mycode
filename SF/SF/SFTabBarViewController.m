@@ -22,6 +22,15 @@
     [self.tabBar removeFromSuperview];
     //调用init会自己掉它initwithframe
     SFTabBar *tabBar=[[SFTabBar alloc]init];
+    
+    tabBar.block=^(int  selectedIndex)
+    {
+        self.selectedIndex=selectedIndex;
+        
+    };
+    
+    
+    
     tabBar.backgroundColor = [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1];
     //调用init的时候frame还没有值，所以在调用initwithframe的时候还没有frame值，所以要先通过layoutSubviews来设置按钮的大小
     //设置尺寸之后才能显示
