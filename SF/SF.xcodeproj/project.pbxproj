@@ -14,7 +14,6 @@
 		653846981C0C84FB00561CFA /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653846971C0C84FB00561CFA /* FindViewController.m */; };
 		6538469B1C0C850D00561CFA /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6538469A1C0C850D00561CFA /* SearchViewController.m */; };
 		653846A11C0C853500561CFA /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653846A01C0C853500561CFA /* MyViewController.m */; };
-		655535451C22D93A00FE6A22 /* ZZNewestListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 655535441C22D93A00FE6A22 /* ZZNewestListModel.m */; };
 		6555354A1C22DE7400FE6A22 /* ZZAnswerDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 655535471C22DE7400FE6A22 /* ZZAnswerDetailModel.m */; };
 		6555354B1C22DE7400FE6A22 /* ZZQuestionDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 655535491C22DE7400FE6A22 /* ZZQuestionDetailModel.m */; };
 		6567B8301C2579EE00CA7002 /* SFTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567B82F1C2579EE00CA7002 /* SFTabBarButton.m */; };
@@ -37,6 +36,7 @@
 		65DBE74D1C2838BE00E7BA5F /* ZZNewestListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DBE7471C2838BE00E7BA5F /* ZZNewestListItem.m */; };
 		65DBE74E1C2838BE00E7BA5F /* ZZNewestVoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DBE7491C2838BE00E7BA5F /* ZZNewestVoteView.m */; };
 		65DBE7531C2838DD00E7BA5F /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DBE7501C2838DD00E7BA5F /* EXTScope.m */; };
+		65DBE7561C283CB000E7BA5F /* ZZNewestListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DBE7551C283CB000E7BA5F /* ZZNewestListModel.m */; };
 		65F9D2721C23131500AEA6B9 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F9D2711C23131500AEA6B9 /* NavViewController.m */; };
 		F3915C1635E8D6537E55B270 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 130EE83BA7CCE95CD9DEC7D4 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -76,8 +76,6 @@
 		6538469A1C0C850D00561CFA /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		6538469F1C0C853500561CFA /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		653846A01C0C853500561CFA /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
-		655535431C22D93A00FE6A22 /* ZZNewestListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNewestListModel.h; sourceTree = "<group>"; };
-		655535441C22D93A00FE6A22 /* ZZNewestListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNewestListModel.m; sourceTree = "<group>"; };
 		655535461C22DE7400FE6A22 /* ZZAnswerDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZAnswerDetailModel.h; sourceTree = "<group>"; };
 		655535471C22DE7400FE6A22 /* ZZAnswerDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZAnswerDetailModel.m; sourceTree = "<group>"; };
 		655535481C22DE7400FE6A22 /* ZZQuestionDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQuestionDetailModel.h; sourceTree = "<group>"; };
@@ -124,6 +122,8 @@
 		65DBE7501C2838DD00E7BA5F /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
 		65DBE7511C2838DD00E7BA5F /* MacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
 		65DBE7521C2838DD00E7BA5F /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		65DBE7541C283CB000E7BA5F /* ZZNewestListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNewestListModel.h; sourceTree = "<group>"; };
+		65DBE7551C283CB000E7BA5F /* ZZNewestListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNewestListModel.m; sourceTree = "<group>"; };
 		65F9D2701C23131500AEA6B9 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
 		65F9D2711C23131500AEA6B9 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +196,8 @@
 		659A29951C0C74F200B36B99 /* SF */ = {
 			isa = PBXGroup;
 			children = (
+				65DBE7541C283CB000E7BA5F /* ZZNewestListModel.h */,
+				65DBE7551C283CB000E7BA5F /* ZZNewestListModel.m */,
 				65DBE74F1C2838DD00E7BA5F /* EXTScope.h */,
 				65DBE7501C2838DD00E7BA5F /* EXTScope.m */,
 				65DBE7511C2838DD00E7BA5F /* MacroDefinition.h */,
@@ -217,8 +219,6 @@
 				6567B8311C257A2800CA7002 /* SFTabBarViewController.h */,
 				6567B8321C257A2800CA7002 /* SFTabBarViewController.m */,
 				659A29991C0C74F200B36B99 /* AppDelegate.h */,
-				655535431C22D93A00FE6A22 /* ZZNewestListModel.h */,
-				655535441C22D93A00FE6A22 /* ZZNewestListModel.m */,
 				659A299A1C0C74F200B36B99 /* AppDelegate.m */,
 				659A299C1C0C74F200B36B99 /* ViewController.h */,
 				659A299D1C0C74F200B36B99 /* ViewController.m */,
@@ -463,10 +463,10 @@
 				65CC6B801C13440400DA50AE /* HottestViewController.m in Sources */,
 				659A29981C0C74F200B36B99 /* main.m in Sources */,
 				65DBE74E1C2838BE00E7BA5F /* ZZNewestVoteView.m in Sources */,
+				65DBE7561C283CB000E7BA5F /* ZZNewestListModel.m in Sources */,
 				6555354B1C22DE7400FE6A22 /* ZZQuestionDetailModel.m in Sources */,
 				6555354A1C22DE7400FE6A22 /* ZZAnswerDetailModel.m in Sources */,
 				65DBE74C1C2838BE00E7BA5F /* ZZNewestCell.m in Sources */,
-				655535451C22D93A00FE6A22 /* ZZNewestListModel.m in Sources */,
 				65DBE74A1C2838BE00E7BA5F /* ZZBaseResponseModel.m in Sources */,
 				65DBE7531C2838DD00E7BA5F /* EXTScope.m in Sources */,
 				6567B8361C257A6600CA7002 /* SFTabBar.m in Sources */,
