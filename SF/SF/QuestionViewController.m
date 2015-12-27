@@ -17,6 +17,8 @@
 #import "HottestViewController.h"
 #import "UnanswerViewController.h"
 #import "NewestViewController.h"
+#import "MacroDefinition.h" 
+#import "EXTScope.h"
 
 @interface QuestionViewController ()<UIScrollViewDelegate,NewestViewControllerDelegate>
 
@@ -39,6 +41,31 @@
     HMSegmentedControl *segmentedControl = [[HMSegmentedControl alloc] initWithSectionTitles:@[@"最新的", @"热门的", @"未回答"]];
     //这里之所以要设置为0，0是因为segmentedControl当作tableview的子view
     segmentedControl.frame = CGRectMake(0, 0, self.view.bounds.size.width, 40);
+    
+    
+    
+    //对最新的、未回答那三个标题进行字体和光标大小进行设置
+    segmentedControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
+//设置选项光标上面横线的颜色
+    segmentedControl.selectionIndicatorColor = kMainColor;
+    //设置选项光标上面横线的粗细
+    segmentedControl.selectionIndicatorHeight = 2;
+    //  设置光标被三个选项评分；
+    segmentedControl.selectionStyle = HMSegmentedControlSelectionStyleFullWidthStripe;
+  //设置选中选项的字体颜色和大小
+    segmentedControl.selectedTitleTextAttributes = @{UITextAttributeTextColor:kMainColor,UITextAttributeFont:[UIFont systemFontOfSize:15]};
+   
+ //这里为未选中的
+    segmentedControl.titleTextAttributes = @{UITextAttributeTextColor:UIColorFromRGB(0x595959),UITextAttributeFont:[UIFont systemFontOfSize:15]};
+    
+    segmentedControl.backgroundColor = UIColorFromRGB(0xf3f3f3);
+    self.segmentedControl = segmentedControl;
+    
+    
+    
+    
+    
+    
     //没有这个在标签切换中显示不出来，以navigation作为容器就必须这样
     self.edgesForExtendedLayout = UIRectEdgeNone;
 
@@ -130,6 +157,8 @@
     QuestionDetailViewController *questionDetailViewController = [[QuestionDetailViewController alloc] initWithQuestionId:questionid];
     
     [self.navigationController pushViewController:questionDetailViewController animated:NO];
+   
+    
     
     
     

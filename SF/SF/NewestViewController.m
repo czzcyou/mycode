@@ -43,6 +43,8 @@
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = [UIColor clearColor];
     @weakify(self);
+    
+    //////////////
     self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         @strongify(self)
         if (self.isPageLoading == NO) {
@@ -51,6 +53,33 @@
         }
     }];
     [self.view addSubview:self.tableView];
+    
+    ///////////////实现一开始就加载
+    [self.tableView.header beginRefreshing];
+    
+    //////////实现数据向上拉获取之前的数据
+    MJRefreshBackNormalFooter *footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        @strongify(self)
+        if(self.isLastPage == NO){ // 如果不是是最后一页的话
+            if(self.isPageLoading == NO){
+                self.page += 1;
+                [self refreshDataWithPage:self.page];
+            }else{
+                [self.tableView.footer endRefreshing];
+            }
+        }else{
+            [self.tableView.footer endRefreshing];
+           // [self showText:@"没有数据了"];
+        }
+        
+    }];
+    [footer setTitle:@"Drag up to load more" forState:MJRefreshStateIdle];
+    [footer setTitle:@"Release to load more" forState:MJRefreshStatePulling];
+    [footer setTitle:@"Loading more ..." forState:MJRefreshStateRefreshing];
+    [footer setTitle:@"No more data" forState:MJRefreshStateNoMoreData];
+    self.tableView.footer = footer;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,7 +118,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     ZZNewestListItemModel *newestListItemModel = self.newestListItems[indexPath.row];
     NSString *newestListItemId = newestListItemModel.newestListItemID;
-    
+  //调用cell对应的controller
     if ([self.delegate respondsToSelector:@selector(newestViewController:didPressedWithQuestionId:)]) {
         [self.delegate newestViewController:self didPressedWithQuestionId:newestListItemId];
     }

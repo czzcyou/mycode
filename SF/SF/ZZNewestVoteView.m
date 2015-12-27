@@ -11,7 +11,7 @@
 
 @interface ZZNewestVoteView ()
 /**
- *  投票数目
+ *  有人回答的次数
  */
 @property (nonatomic, strong) UILabel *voteNumberLabel;
 /**
@@ -36,7 +36,7 @@
                  Anwsered:(NSString *)Anwsered
                isAccepted:(BOOL)isAccepted{
     
-    // 投票数目
+    // 回答次数
     self.voteNumberLabel.text = Anwsered;
     
     

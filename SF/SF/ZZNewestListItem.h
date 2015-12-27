@@ -37,7 +37,7 @@
 @property (nonatomic, copy) NSString *views;
 @property (nonatomic, copy) NSString *answers;
 @property (nonatomic, assign) BOOL isClosed;
-@property (nonatomic, strong) ZZNewestListItemLastAnswerModel *lastAnswer;
+@property (nonatomic, strong) ZZNewestListItemLastAnswerModel *lastAnswer;  //最新的提问
 @property (nonatomic, strong) ZZNewestListItemUserModel *user;
 @end
 // -------------------------------------------------------------------

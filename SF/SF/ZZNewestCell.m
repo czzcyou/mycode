@@ -43,7 +43,7 @@
     }
     
     NSString *title = newestListItem.title;
-    
+    //设置最新页面里面的问题相关信息
     [self layoutWithTitle:title
                      Text:text
                isAccepted:newestListItem.isAccepted
@@ -98,7 +98,7 @@
     }
     return _titleLabel;
 }
-
+//把回答人数的view添加到cell 上面！
 - (ZZNewestVoteView *)voteView{
     if (_voteView == nil) {
         _voteView = [ZZNewestVoteView voteView];

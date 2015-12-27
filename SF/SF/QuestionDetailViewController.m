@@ -32,12 +32,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+//    self.tabBarController.tabBar.hidden = YES;
     [self.rdv_tabBarController setTabBarHidden:YES animated:YES];
     //[self configureTitles:@"问题详情"];
     self.navigationItem.title=@"问题详情";
     [self configureWebView];
     [self requestQuestionDetailWithQuestionId:self.questionId];
+    
 }
 
 - (void)didReceiveMemoryWarning {
