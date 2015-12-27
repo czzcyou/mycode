@@ -157,7 +157,7 @@
     QuestionDetailViewController *questionDetailViewController = [[QuestionDetailViewController alloc] initWithQuestionId:questionid];
     
     [self.navigationController pushViewController:questionDetailViewController animated:NO];
-   
+       
     
     
     

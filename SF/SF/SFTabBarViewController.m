@@ -43,6 +43,13 @@
 
     //[self.view addSubview:tabBar];
     [self.tabBar addSubview:tabBar];
+    
+    // 设置导航栏的主题
+    UINavigationBar *navBar = [UINavigationBar appearance];
+    //如何设置颜色？？？
+    
+    //[navBar setBarTintColor:[UIColor greenColor]];
+    [navBar setBarTintColor:[UIColor colorWithRed:0/255.0 green:168/255.0 blue:97/255.0 alpha:1.0]];
 }
 
 - (void)didReceiveMemoryWarning {
