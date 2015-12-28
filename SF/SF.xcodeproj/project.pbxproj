@@ -30,6 +30,8 @@
 		65CC6B7D1C1343EF00DA50AE /* NewestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC6B7C1C1343EF00DA50AE /* NewestViewController.m */; };
 		65CC6B801C13440400DA50AE /* HottestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC6B7F1C13440400DA50AE /* HottestViewController.m */; };
 		65CC6B831C13441800DA50AE /* UnanswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC6B821C13441800DA50AE /* UnanswerViewController.m */; };
+		65D989581C317D1D00975F89 /* profileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D989571C317D1D00975F89 /* profileCell.m */; };
+		65D9895B1C317D3E00975F89 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D9895A1C317D3E00975F89 /* ListCell.m */; };
 		65DBE74A1C2838BE00E7BA5F /* ZZBaseResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DBE7411C2838BE00E7BA5F /* ZZBaseResponseModel.m */; };
 		65DBE74B1C2838BE00E7BA5F /* ZZHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DBE7431C2838BE00E7BA5F /* ZZHttpClient.m */; };
 		65DBE74C1C2838BE00E7BA5F /* ZZNewestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DBE7451C2838BE00E7BA5F /* ZZNewestCell.m */; };
@@ -108,6 +110,10 @@
 		65CC6B7F1C13440400DA50AE /* HottestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HottestViewController.m; sourceTree = "<group>"; };
 		65CC6B811C13441800DA50AE /* UnanswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnanswerViewController.h; sourceTree = "<group>"; };
 		65CC6B821C13441800DA50AE /* UnanswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnanswerViewController.m; sourceTree = "<group>"; };
+		65D989561C317D1D00975F89 /* profileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = profileCell.h; sourceTree = "<group>"; };
+		65D989571C317D1D00975F89 /* profileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = profileCell.m; sourceTree = "<group>"; };
+		65D989591C317D3E00975F89 /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCell.h; sourceTree = "<group>"; };
+		65D9895A1C317D3E00975F89 /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCell.m; sourceTree = "<group>"; };
 		65DBE7401C2838BE00E7BA5F /* ZZBaseResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZBaseResponseModel.h; sourceTree = "<group>"; };
 		65DBE7411C2838BE00E7BA5F /* ZZBaseResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZBaseResponseModel.m; sourceTree = "<group>"; };
 		65DBE7421C2838BE00E7BA5F /* ZZHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZHttpClient.h; sourceTree = "<group>"; };
@@ -253,6 +259,10 @@
 				6531C9FC1C1719800088CDC9 /* AskViewController.m */,
 				6531C9FE1C171F9E0088CDC9 /* QuestionDetailViewController.h */,
 				6531C9FF1C171F9E0088CDC9 /* QuestionDetailViewController.m */,
+				65D989561C317D1D00975F89 /* profileCell.h */,
+				65D989571C317D1D00975F89 /* profileCell.m */,
+				65D989591C317D3E00975F89 /* ListCell.h */,
+				65D9895A1C317D3E00975F89 /* ListCell.m */,
 			);
 			path = SF;
 			sourceTree = "<group>";
@@ -449,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				653846921C0C84BA00561CFA /* ArticalViewController.m in Sources */,
+				65D9895B1C317D3E00975F89 /* ListCell.m in Sources */,
 				659A299E1C0C74F200B36B99 /* ViewController.m in Sources */,
 				65F9D2721C23131500AEA6B9 /* NavViewController.m in Sources */,
 				6567B8331C257A2800CA7002 /* SFTabBarViewController.m in Sources */,
@@ -460,6 +471,7 @@
 				6538468F1C0C848F00561CFA /* QuestionViewController.m in Sources */,
 				65DBE74D1C2838BE00E7BA5F /* ZZNewestListItem.m in Sources */,
 				6567B8301C2579EE00CA7002 /* SFTabBarButton.m in Sources */,
+				65D989581C317D1D00975F89 /* profileCell.m in Sources */,
 				65CC6B801C13440400DA50AE /* HottestViewController.m in Sources */,
 				659A29981C0C74F200B36B99 /* main.m in Sources */,
 				65DBE74E1C2838BE00E7BA5F /* ZZNewestVoteView.m in Sources */,

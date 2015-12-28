@@ -44,7 +44,7 @@
     //[self.view addSubview:tabBar];
     [self.tabBar addSubview:tabBar];
     
-    // 设置导航栏的主题
+    // 设置导航栏的主题，这里是获取所有的！！导航栏
     UINavigationBar *navBar = [UINavigationBar appearance];
     //如何设置颜色？？？
     

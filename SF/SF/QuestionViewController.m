@@ -37,6 +37,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 36, 18)];
+    titleLabel.text = @"问题";
+    titleLabel.textColor = [UIColor whiteColor];
+    titleLabel.backgroundColor = [UIColor clearColor];
+    titleLabel.font = [UIFont systemFontOfSize:18];
+    self.navigationItem.titleView = titleLabel;
     
     HMSegmentedControl *segmentedControl = [[HMSegmentedControl alloc] initWithSectionTitles:@[@"最新的", @"热门的", @"未回答"]];
     //这里之所以要设置为0，0是因为segmentedControl当作tableview的子view
@@ -61,7 +67,11 @@
     segmentedControl.backgroundColor = UIColorFromRGB(0xf3f3f3);
     self.segmentedControl = segmentedControl;
     
-    
+//    在iOS 7中，苹果引入了一个新的属性，叫做[UIViewController setEdgesForExtendedLayout]，它的默认值为UIRectEdgeAll。当你的容器是navigation controller时，默认的布局将从navigation bar的顶部开始。这就是为什么所有的UI元素都往上漂移了44pt。
+//    修复这个问题的快速方法就是在方法- (void)viewDidLoad中添加如下一行代码：
+//    1
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
+//    这样问题就修复了。
     
     
     
