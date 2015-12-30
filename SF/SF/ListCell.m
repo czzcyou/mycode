@@ -8,16 +8,28 @@
 
 #import "ListCell.h"
 
+
+@interface ListCell ()
+@property (nonatomic, strong) UILabel *numLabel;
+@end
+
 @implementation ListCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    [self configureSubViews];
+    return self;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+- (void)configureSubViews {
+    CGRect rect = CGRectMake(330, 0, 18, self.bounds.size.height);
+    self.numLabel = [[UILabel alloc] initWithFrame:rect];
+    self.numLabel.backgroundColor = [UIColor clearColor];
+}
+
+- (void)configureNumber:(NSString *)number {
+    self.numLabel.text = number;
 }
 
 @end

@@ -165,25 +165,25 @@
         _tableView.showsVerticalScrollIndicator = YES;
         _tableView.bounces = YES;
         [self.view addSubview:_tableView];
-        
-        UIView *head=[[UIView alloc]initWithFrame:CGRectMake(0., 0, 320, 216)];
-        head.backgroundColor  =[UIColor colorWithRed:0/255.0 green:168/255.0 blue:97/255.0 alpha:1.0];
-        _tableView.tableHeaderView=head;
-        
-        UIImage *image = [UIImage imageNamed:@"user_avatar"];
-        _profileImageView = [[UIImageView alloc] initWithImage:image];
-        _profileImageView.frame = CGRectMake(0,30, 60, 60);
-        _profileImageView.userInteractionEnabled = YES;
-        _profileImageView.center = CGPointMake(320 * 0.5+50, _profileImageView.center.y);
-        [head addSubview:_profileImageView];
-        
-        CGRect rect1 = CGRectMake(50, CGRectGetMaxY(_profileImageView.frame) + 20, 320, 17);
-        _userNameAndLoginTipLabel = [[UILabel alloc] initWithFrame:rect1];
-        _userNameAndLoginTipLabel.text = @"登录/注册";
-        _userNameAndLoginTipLabel.textColor = [UIColor whiteColor];
-        _userNameAndLoginTipLabel.font = [UIFont systemFontOfSize:17];
-        _userNameAndLoginTipLabel.textAlignment = NSTextAlignmentCenter;
-        [head addSubview:_userNameAndLoginTipLabel];
+//        
+//        UIView *head=[[UIView alloc]initWithFrame:CGRectMake(0., 0, 320, 216)];
+//        head.backgroundColor  =[UIColor colorWithRed:0/255.0 green:168/255.0 blue:97/255.0 alpha:1.0];
+//        _tableView.tableHeaderView=head;
+//        
+//        UIImage *image = [UIImage imageNamed:@"user_avatar"];
+//        _profileImageView = [[UIImageView alloc] initWithImage:image];
+//        _profileImageView.frame = CGRectMake(0,30, 60, 60);
+//        _profileImageView.userInteractionEnabled = YES;
+//        _profileImageView.center = CGPointMake(320 * 0.5+50, _profileImageView.center.y);
+//        [head addSubview:_profileImageView];
+//        
+//        CGRect rect1 = CGRectMake(50, CGRectGetMaxY(_profileImageView.frame) + 20, 320, 17);
+//        _userNameAndLoginTipLabel = [[UILabel alloc] initWithFrame:rect1];
+//        _userNameAndLoginTipLabel.text = @"登录/注册";
+//        _userNameAndLoginTipLabel.textColor = [UIColor whiteColor];
+//        _userNameAndLoginTipLabel.font = [UIFont systemFontOfSize:17];
+//        _userNameAndLoginTipLabel.textAlignment = NSTextAlignmentCenter;
+//        [head addSubview:_userNameAndLoginTipLabel];
 
    
         

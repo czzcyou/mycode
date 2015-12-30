@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ListCell : UITableViewCell
-
+- (void)configureNumber:(NSString *)number;
 @end
