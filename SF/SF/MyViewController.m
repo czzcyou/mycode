@@ -94,14 +94,14 @@
         return cell;
     }else {
         static NSString *listCellIdentifer = @"listCellIdentifer";
-        ListCell  *cell = [tableView dequeueReusableCellWithIdentifier:listCellIdentifer];
-        if (cell == nil) {
-            cell = [[ListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:listCellIdentifer];
-            [self configureCell:cell indexPath:indexPath];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        ListCell  *cell1 = [tableView dequeueReusableCellWithIdentifier:listCellIdentifer];
+        if (cell1 == nil) {
+            cell1 = [[ListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:listCellIdentifer];
+            [self configureCell:cell1 indexPath:indexPath];
+            cell1.selectionStyle = UITableViewCellSelectionStyleNone;
             
         }
-        return cell;
+        return cell1;
         
     }
 }
@@ -157,7 +157,10 @@
 //viewcontroller添加tableview
 - (UITableView *)tableView{
     if (_tableView == nil) {
-        CGRect rect = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 100);
+     //   CGRect rect = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 100);
+        
+    //为什么没有减去100就不会有上下两条线出现
+         CGRect rect = CGRectMake(0, 0, 320, self.view.bounds.size.height );
         _tableView = [[UITableView alloc] initWithFrame:rect];
         _tableView.delegate = self;
         _tableView.dataSource = self;
