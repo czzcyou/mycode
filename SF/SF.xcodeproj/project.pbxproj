@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65178AA61C3401C600361489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65178AA51C3401C600361489 /* Assets.xcassets */; };
 		6531C9FD1C1719800088CDC9 /* AskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531C9FC1C1719800088CDC9 /* AskViewController.m */; };
 		6531CA001C171F9E0088CDC9 /* QuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531C9FF1C171F9E0088CDC9 /* QuestionDetailViewController.m */; };
 		6538468F1C0C848F00561CFA /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6538468E1C0C848F00561CFA /* QuestionViewController.m */; };
@@ -23,7 +24,6 @@
 		659A299B1C0C74F200B36B99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A299A1C0C74F200B36B99 /* AppDelegate.m */; };
 		659A299E1C0C74F200B36B99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A299D1C0C74F200B36B99 /* ViewController.m */; };
 		659A29A11C0C74F200B36B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659A299F1C0C74F200B36B99 /* Main.storyboard */; };
-		659A29A31C0C74F200B36B99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659A29A21C0C74F200B36B99 /* Assets.xcassets */; };
 		659A29A61C0C74F200B36B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659A29A41C0C74F200B36B99 /* LaunchScreen.storyboard */; };
 		659A29B11C0C74F200B36B99 /* SFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A29B01C0C74F200B36B99 /* SFTests.m */; };
 		659A29BC1C0C74F200B36B99 /* SFUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A29BB1C0C74F200B36B99 /* SFUITests.m */; };
@@ -64,6 +64,7 @@
 		130EE83BA7CCE95CD9DEC7D4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F93FF4B9281E8AFB31A9A6B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3C75B1F19083814A041A3D7A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		65178AA51C3401C600361489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6531C9FB1C1719800088CDC9 /* AskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskViewController.h; sourceTree = "<group>"; };
 		6531C9FC1C1719800088CDC9 /* AskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskViewController.m; sourceTree = "<group>"; };
 		6531C9FE1C171F9E0088CDC9 /* QuestionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDetailViewController.h; sourceTree = "<group>"; };
@@ -95,7 +96,6 @@
 		659A299C1C0C74F200B36B99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		659A299D1C0C74F200B36B99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		659A29A01C0C74F200B36B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		659A29A21C0C74F200B36B99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		659A29A51C0C74F200B36B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		659A29A71C0C74F200B36B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659A29AC1C0C74F200B36B99 /* SFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +202,7 @@
 		659A29951C0C74F200B36B99 /* SF */ = {
 			isa = PBXGroup;
 			children = (
+				65178AA51C3401C600361489 /* Assets.xcassets */,
 				65DBE7541C283CB000E7BA5F /* ZZNewestListModel.h */,
 				65DBE7551C283CB000E7BA5F /* ZZNewestListModel.m */,
 				65DBE74F1C2838DD00E7BA5F /* EXTScope.h */,
@@ -229,7 +230,6 @@
 				659A299C1C0C74F200B36B99 /* ViewController.h */,
 				659A299D1C0C74F200B36B99 /* ViewController.m */,
 				659A299F1C0C74F200B36B99 /* Main.storyboard */,
-				659A29A21C0C74F200B36B99 /* Assets.xcassets */,
 				659A29A41C0C74F200B36B99 /* LaunchScreen.storyboard */,
 				659A29A71C0C74F200B36B99 /* Info.plist */,
 				65F9D2701C23131500AEA6B9 /* NavViewController.h */,
@@ -399,7 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				659A29A61C0C74F200B36B99 /* LaunchScreen.storyboard in Resources */,
-				659A29A31C0C74F200B36B99 /* Assets.xcassets in Resources */,
+				65178AA61C3401C600361489 /* Assets.xcassets in Resources */,
 				659A29A11C0C74F200B36B99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
