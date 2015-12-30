@@ -160,7 +160,10 @@
      //   CGRect rect = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 100);
         
     //为什么没有减去100就不会有上下两条线出现
-         CGRect rect = CGRectMake(0, 0, 320, self.view.bounds.size.height );
+   // CGRect rect = CGRectMake(0, 45, self.view.bounds.size.width, self.view.bounds.size.height);
+        
+     //如果不减100那么不会变成ScroolView
+    CGRect rect = CGRectMake(0, 45, self.view.bounds.size.width, self.view.bounds.size.height - 100);
         _tableView = [[UITableView alloc] initWithFrame:rect];
         _tableView.delegate = self;
         _tableView.dataSource = self;
