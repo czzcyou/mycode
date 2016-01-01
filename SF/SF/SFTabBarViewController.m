@@ -46,7 +46,14 @@
     
     // 设置导航栏的主题，这里是获取所有的！！导航栏
     UINavigationBar *navBar = [UINavigationBar appearance];
-    //如何设置颜色？？？
+    //navigationBar 设置关于setTranslucent
+    
+
+    
+//    如果setTranslucent=yes 默认的   则状态栏及导航栏底部为透明的，界面上的组件应该从屏幕顶部开始显示，因为是半透明的，可以看到，所以为了不和状态栏及导航栏重叠，第一个组件的y应该从45的位置算起
+//    如果设置成no，则状态栏及导航样不为透明的，界面上的组件就是紧挨着导航栏显示了，所以就不需要让第一个组件在y方向偏离45的高度了
+    
+    [navBar setTranslucent:NO];
     
     //[navBar setBarTintColor:[UIColor greenColor]];
     [navBar setBarTintColor:[UIColor colorWithRed:0/255.0 green:168/255.0 blue:97/255.0 alpha:1.0]];

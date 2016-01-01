@@ -163,7 +163,7 @@
    // CGRect rect = CGRectMake(0, 45, self.view.bounds.size.width, self.view.bounds.size.height);
         
      //如果不减100那么不会变成ScroolView
-    CGRect rect = CGRectMake(0, 45, self.view.bounds.size.width, self.view.bounds.size.height - 100);
+        CGRect rect = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 100);
         _tableView = [[UITableView alloc] initWithFrame:rect];
         _tableView.delegate = self;
         _tableView.dataSource = self;
