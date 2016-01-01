@@ -54,8 +54,12 @@
 //    如果设置成no，则状态栏及导航样不为透明的，界面上的组件就是紧挨着导航栏显示了，所以就不需要让第一个组件在y方向偏离45的高度了
     
     [navBar setTranslucent:NO];
-    
+    //[navBar setShadowImage:[UIImage new]];
     //[navBar setBarTintColor:[UIColor greenColor]];
+    // 去除导航栏上的分割线
+    [navBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    navBar.shadowImage = [[UIImage alloc] init];
+
     [navBar setBarTintColor:[UIColor colorWithRed:0/255.0 green:168/255.0 blue:97/255.0 alpha:1.0]];
 }
 
