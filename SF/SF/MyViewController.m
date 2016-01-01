@@ -9,7 +9,12 @@
 #import "MyViewController.h"
 #import "MacroDefinition.h"
 #import "profileCell.h" 
-#import "ListCell.h"    
+#import "ListCell.h"   
+#import "SettingViewController.h"
+#import "Configuration.h"
+#import "ZZHttpClient.h"  
+#import "LoginViewController.h" 
+#import "EXTScope.h"
 
 
 
@@ -116,7 +121,45 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     // 点击最后一个cell不需要登录
-    
+    // 点击最后一个cell不需要登录
+    // 其他cell先要判断是否登录，如果未登录弹出登录控制器
+    if (indexPath.section == 4 && indexPath.row == 0) {
+        SettingViewController *settingViewController = [[SettingViewController alloc] init];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:settingViewController];
+        [self presentViewController:navigationController animated:YES completion:nil];
+    }else {
+        if ([Configuration sharedConfigration].token.length == 0) {
+            @weakify(self);
+            LoginViewController *loginViewController = [[LoginViewController alloc] initWithFinishLogin:^{
+                @strongify(self);
+                @weakify(self);
+                [[ZZHttpClient sharedHTTPClient] requestUserProfileWithSuccessBlock:^(id data) {
+                    @strongify(self);
+                    NSLog(@"success");
+                } failBlock:^(id data) {
+                    @strongify(self);
+                    NSLog(@"fail");
+                }];
+                
+            }];
+            
+            UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+            [self presentViewController:navigationController animated:YES completion:nil];
+        }else{
+            //!! 晚些替换成宏
+            if (indexPath.section == 0 && indexPath.row == 0) {
+                
+                
+            } else if (indexPath.section == 1 && indexPath.row == 0) {
+                
+                
+                
+            }
+            
+            
+            
+        }
+    }
     
 }
 
@@ -163,7 +206,7 @@
    // CGRect rect = CGRectMake(0, 45, self.view.bounds.size.width, self.view.bounds.size.height);
         
      //如果不减100那么不会变成ScroolView
-        CGRect rect = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 100);
+        CGRect rect = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 22);
         _tableView = [[UITableView alloc] initWithFrame:rect];
         _tableView.delegate = self;
         _tableView.dataSource = self;
