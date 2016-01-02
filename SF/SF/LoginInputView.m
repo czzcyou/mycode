@@ -1,21 +1,22 @@
 //
-//  LoginInputViewController.m
+//  LoginInputView.m
 //  SF
 //
-//  Created by CYZ on 16/1/1.
+//  Created by CYZ on 16/1/3.
 //  Copyright © 2016年 CYZ. All rights reserved.
 //
 
-#import "LoginInputViewController.h"
+#import "LoginInputView.h"
+
 #import "MacroDefinition.h"
 
-@interface LoginInputViewController() <UITextFieldDelegate>
+@interface LoginInputView () <UITextFieldDelegate>
 @property (nonatomic, strong) UITextField *emailTextField;
 @property (nonatomic, strong) UITextField *passwordTextField;
 @end
 
 
-@implementation LoginInputViewController
+@implementation LoginInputView
 
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
@@ -110,14 +111,4 @@
 
 
 @end
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-@end

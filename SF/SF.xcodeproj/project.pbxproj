@@ -43,7 +43,7 @@
 		65E0B7501C364667009E595E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0B74F1C364667009E595E /* SettingViewController.m */; };
 		65E0B7531C3649FF009E595E /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0B7521C3649FF009E595E /* Configuration.m */; };
 		65E0B7561C36504F009E595E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0B7551C36504F009E595E /* LoginViewController.m */; };
-		65E0B7591C365355009E595E /* LoginInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0B7581C365355009E595E /* LoginInputViewController.m */; };
+		65F0799D1C3830DE00B2681C /* LoginInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F0799C1C3830DE00B2681C /* LoginInputView.m */; };
 		65F9D2721C23131500AEA6B9 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F9D2711C23131500AEA6B9 /* NavViewController.m */; };
 		F3915C1635E8D6537E55B270 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 130EE83BA7CCE95CD9DEC7D4 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -142,8 +142,8 @@
 		65E0B7521C3649FF009E595E /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
 		65E0B7541C36504F009E595E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		65E0B7551C36504F009E595E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		65E0B7571C365355009E595E /* LoginInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInputViewController.h; sourceTree = "<group>"; };
-		65E0B7581C365355009E595E /* LoginInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInputViewController.m; sourceTree = "<group>"; };
+		65F0799B1C3830DE00B2681C /* LoginInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInputView.h; sourceTree = "<group>"; };
+		65F0799C1C3830DE00B2681C /* LoginInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInputView.m; sourceTree = "<group>"; };
 		65F9D2701C23131500AEA6B9 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
 		65F9D2711C23131500AEA6B9 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -284,8 +284,8 @@
 				65E0B7521C3649FF009E595E /* Configuration.m */,
 				65E0B7541C36504F009E595E /* LoginViewController.h */,
 				65E0B7551C36504F009E595E /* LoginViewController.m */,
-				65E0B7571C365355009E595E /* LoginInputViewController.h */,
-				65E0B7581C365355009E595E /* LoginInputViewController.m */,
+				65F0799B1C3830DE00B2681C /* LoginInputView.h */,
+				65F0799C1C3830DE00B2681C /* LoginInputView.m */,
 			);
 			path = SF;
 			sourceTree = "<group>";
@@ -498,6 +498,7 @@
 				6538468F1C0C848F00561CFA /* QuestionViewController.m in Sources */,
 				65DBE74D1C2838BE00E7BA5F /* ZZNewestListItem.m in Sources */,
 				6567B8301C2579EE00CA7002 /* SFTabBarButton.m in Sources */,
+				65F0799D1C3830DE00B2681C /* LoginInputView.m in Sources */,
 				65D989581C317D1D00975F89 /* profileCell.m in Sources */,
 				65CC6B801C13440400DA50AE /* HottestViewController.m in Sources */,
 				659A29981C0C74F200B36B99 /* main.m in Sources */,
@@ -512,7 +513,6 @@
 				6531CA001C171F9E0088CDC9 /* QuestionDetailViewController.m in Sources */,
 				6538469B1C0C850D00561CFA /* SearchViewController.m in Sources */,
 				65DBE74B1C2838BE00E7BA5F /* ZZHttpClient.m in Sources */,
-				65E0B7591C365355009E595E /* LoginInputViewController.m in Sources */,
 				65CC6B7D1C1343EF00DA50AE /* NewestViewController.m in Sources */,
 				65E0B7561C36504F009E595E /* LoginViewController.m in Sources */,
 			);
@@ -656,11 +656,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SF/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com-SF";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -671,11 +671,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SF/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com-SF";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

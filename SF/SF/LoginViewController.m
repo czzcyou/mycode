@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-#import "LoginInputViewController.h"
+#import "LoginInputView.h"
 #import "MacroDefinition.h"
 #import "ZZHttpClient.h"
 #import "EXTScope.h"
@@ -20,7 +20,7 @@
 
 @property (nonatomic, strong) UIScrollView *backgroundScrollView;
 @property (nonatomic, strong) UILabel *loginTipLabel;
-@property (nonatomic, strong) LoginInputViewController *loginInputView;
+@property (nonatomic, strong) LoginInputView *loginInputView;
 @property (nonatomic, strong) UIButton *registerButton;
 @property (nonatomic, strong) UIButton *retrivePasswordButton;
 @property (nonatomic, strong) UIButton *loginButton;
@@ -139,11 +139,11 @@
 }
 
 
-- (LoginInputViewController *)loginInputView {
-//    if (_loginInputView == nil) {
-//        _loginInputView = [[LoginInputViewController alloc] initWithFrame:CGRectMake(0, 169, [UIScreen mainScreen].bounds.size.width, 100)];
-//    }
- //  return  _loginInputView;
+- (LoginInputView *)loginInputView {
+    if (_loginInputView == nil) {
+        _loginInputView = [[LoginInputView alloc] initWithFrame:CGRectMake(0, 169, [UIScreen mainScreen].bounds.size.width, 100)];
+    }
+  return  _loginInputView;
     return _loginInputView ;
 }
 
