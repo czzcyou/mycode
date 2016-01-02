@@ -7,28 +7,27 @@
 //
 
 #import "LoginViewController.h"
-#import "LoginInputView.h"
+#import "LoginInputViewController.h"
 #import "MacroDefinition.h"
 #import "ZZHttpClient.h"
 #import "EXTScope.h"
-#import "ZZRegisterViewController.h"
-#import "ZZLoginModel.h"
-#import "ZZConfiguration.h"
 
-@interface ZZLoginViewController ()
+#import "Configuration.h"
+
+@interface LoginViewController ()
 
 @property (nonatomic, copy) FinishLoginBlock finishLoginBlock;
 
 @property (nonatomic, strong) UIScrollView *backgroundScrollView;
 @property (nonatomic, strong) UILabel *loginTipLabel;
-@property (nonatomic, strong) LoginInputView *loginInputView;
+@property (nonatomic, strong) LoginInputViewController *loginInputView;
 @property (nonatomic, strong) UIButton *registerButton;
 @property (nonatomic, strong) UIButton *retrivePasswordButton;
 @property (nonatomic, strong) UIButton *loginButton;
 
 @end
 
-@implementation ZZLoginViewController
+@implementation LoginViewController
 
 - (instancetype)initWithFinishLogin:(FinishLoginBlock)finishLoginBlock {
     self = [super init];
@@ -44,7 +43,7 @@
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.view.backgroundColor = UIColorFromRGB(0xefeff4);
-    [self configureTitles:@"登录"];
+    //[self configureTitles:@"登录"];
     [self configureSubViews];
     [self configureLeftBarItem];
 }
@@ -59,10 +58,10 @@
     // scrollView
     self.backgroundScrollView.contentSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height + 160);
     self.backgroundScrollView.bounces = YES;
-    [self.backgroundScrollView addSubview:self.loginInputView];
+  //  [self.backgroundScrollView addSubview:self.loginInputView];
     
     // 登录按钮
-    self.loginButton.frame = CGRectMake(0, CGRectGetMaxY(_loginInputView.frame) + 16, 346, 45);
+//self.loginButton.frame = CGRectMake(0, CGRectGetMaxY(_loginInputView.frame) + 16, 346, 45);
     self.loginButton.center = CGPointMake(self.view.bounds.size.width * 0.5, _loginButton.center.y);
     [self.backgroundScrollView addSubview:self.loginButton];
     
@@ -94,36 +93,36 @@
 
 #pragma mark - target action
 - (void)loginButtonDidPressed:(UIButton *)button {
-    [self showLoading];
+  //  [self showLoading];
     @weakify(self);
-    [[ZZHttpClient sharedHTTPClient] requestLoginWithName:_loginInputView.emailText password:_loginInputView.passwordText SuccessBlock:^(id data) {
-        @strongify(self);
-        [self hideLoading];
-        ZZLoginModel *loginModel = [[ZZLoginModel alloc] initWithDictionary:data error:nil];
-        if (loginModel.status == 0) {
-            [ZZConfiguration sharedConfigration].token = loginModel.token;
-            [ZZConfiguration sharedConfigration].userID = loginModel.user.userID;
-            [self dismissViewControllerAnimated:YES completion:nil];
-            if (self.finishLoginBlock) {
-                self.finishLoginBlock();
-            }
-        }else {
-            NSString *errorMessage = loginModel.mobile.error;
-            [self showText:errorMessage];
-            
-        }
-    } failBlock:^(id error) {
-        @strongify(self);
-        [self hideLoading];
-        [self showText:@"服务器或网络异常,请重试"];
-    }];
+//   // [[HttpClient sharedHTTPClient] requestLoginWithName:_loginInputView.emailText password:_loginInputView.passwordText SuccessBlock:^(id data) {
+// //       @strongify(self);
+// //       [self hideLoading];
+// //       ZZLoginModel *loginModel = [[ZZLoginModel alloc] initWithDictionary:data error:nil];
+//   //     if (loginModel.status == 0) {
+//            [ZZConfiguration sharedConfigration].token = loginModel.token;
+//            [ZZConfiguration sharedConfigration].userID = loginModel.user.userID;
+//            [self dismissViewControllerAnimated:YES completion:nil];
+//            if (self.finishLoginBlock) {
+//                self.finishLoginBlock();
+//            }
+//        }else {
+//            NSString *errorMessage = loginModel.mobile.error;
+//            [self showText:errorMessage];
+//            
+//        }
+//    } failBlock:^(id error) {
+//        @strongify(self);
+//        [self hideLoading];
+//        [self showText:@"服务器或网络异常,请重试"];
+//    }];
     
 }
 
 - (void)registerButtonDidPressed:(UIButton *)button {
-    ZZRegisterViewController *registerViewController = [[ZZRegisterViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:registerViewController];
-    [self presentViewController:navigationController animated:YES completion:nil];
+//    RegisterViewController *registerViewController = [[RegisterViewController alloc] init];
+//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:registerViewController];
+//    [self presentViewController:navigationController animated:YES completion:nil];
     
 }
 
@@ -140,11 +139,12 @@
 }
 
 
-- (ZZLoginInputView *)loginInputView {
-    if (_loginInputView == nil) {
-        _loginInputView = [[ZZLoginInputView alloc] initWithFrame:CGRectMake(0, 169, [UIScreen mainScreen].bounds.size.width, 100)];
-    }
-    return  _loginInputView;
+- (LoginInputViewController *)loginInputView {
+//    if (_loginInputView == nil) {
+//        _loginInputView = [[LoginInputViewController alloc] initWithFrame:CGRectMake(0, 169, [UIScreen mainScreen].bounds.size.width, 100)];
+//    }
+ //  return  _loginInputView;
+    return _loginInputView ;
 }
 
 - (UIButton *)loginButton {
@@ -184,7 +184,5 @@
     return _registerButton;
     
 }
-
-@end
 
 @end

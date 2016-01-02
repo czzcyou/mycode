@@ -385,6 +385,7 @@
 				TargetAttributes = {
 					659A29921C0C74F200B36B99 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = QZCKBX27A2;
 					};
 					659A29AB1C0C74F200B36B99 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -653,10 +654,13 @@
 			baseConfigurationReference = 3C75B1F19083814A041A3D7A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.SF;
+				PRODUCT_BUNDLE_IDENTIFIER = "com-SF";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -665,10 +669,13 @@
 			baseConfigurationReference = 2F93FF4B9281E8AFB31A9A6B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.SF;
+				PRODUCT_BUNDLE_IDENTIFIER = "com-SF";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

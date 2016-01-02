@@ -133,13 +133,13 @@
             LoginViewController *loginViewController = [[LoginViewController alloc] initWithFinishLogin:^{
                 @strongify(self);
                 @weakify(self);
-                [[ZZHttpClient sharedHTTPClient] requestUserProfileWithSuccessBlock:^(id data) {
-                    @strongify(self);
-                    NSLog(@"success");
-                } failBlock:^(id data) {
-                    @strongify(self);
-                    NSLog(@"fail");
-                }];
+//                [[ZZHttpClient sharedHTTPClient] requestUserProfileWithSuccessBlock:^(id data) {
+//                    @strongify(self);
+//                    NSLog(@"success");
+//                } failBlock:^(id data) {
+//                    @strongify(self);
+//                    NSLog(@"fail");
+//                }];
                 
             }];
             
