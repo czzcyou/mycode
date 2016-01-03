@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-1704.5333333333333" y="-390.9733333333333"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Nav View Controller-->
         <scene sceneID="gI8-M5-yQm">
             <objects>
-                <navigationController id="ISk-yE-dAX" sceneMemberID="viewController">
+                <navigationController id="ISk-yE-dAX" customClass="NavViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="F4j-Yp-X4a"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="k3C-Fg-Uh6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="-1173.3333333333333" y="107.92"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Nav View Controller-->
         <scene sceneID="z2g-wX-mzu">
             <objects>
-                <navigationController id="Ff0-Sh-KDH" sceneMemberID="viewController">
+                <navigationController id="Ff0-Sh-KDH" customClass="NavViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="zRx-15-xUz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Vh-jw-5Iv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="-1177.5999999999999" y="994"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Nav View Controller-->
         <scene sceneID="1eY-EE-5KV">
             <objects>
-                <navigationController id="ki3-A1-zRC" sceneMemberID="viewController">
+                <navigationController id="ki3-A1-zRC" customClass="NavViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="PLD-sl-ogd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8YB-eH-VTH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="-1173.3333333333333" y="-613.43999999999994"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Nav View Controller-->
         <scene sceneID="ue3-EW-PL5">
             <objects>
-                <navigationController id="9Pd-Db-arD" sceneMemberID="viewController">
+                <navigationController id="9Pd-Db-arD" customClass="NavViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="1" title="" id="yMY-8R-oAR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rXg-4d-FzM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
