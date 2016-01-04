@@ -40,6 +40,7 @@
 		65DBE74E1C2838BE00E7BA5F /* ZZNewestVoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DBE7491C2838BE00E7BA5F /* ZZNewestVoteView.m */; };
 		65DBE7531C2838DD00E7BA5F /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DBE7501C2838DD00E7BA5F /* EXTScope.m */; };
 		65DBE7561C283CB000E7BA5F /* ZZNewestListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DBE7551C283CB000E7BA5F /* ZZNewestListModel.m */; };
+		65E0A9B81C3ABC3C00C46F9D /* RankView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0A9B71C3ABC3C00C46F9D /* RankView.m */; };
 		65E0B7501C364667009E595E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0B74F1C364667009E595E /* SettingViewController.m */; };
 		65E0B7531C3649FF009E595E /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0B7521C3649FF009E595E /* Configuration.m */; };
 		65E0B7561C36504F009E595E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0B7551C36504F009E595E /* LoginViewController.m */; };
@@ -136,6 +137,8 @@
 		65DBE7521C2838DD00E7BA5F /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		65DBE7541C283CB000E7BA5F /* ZZNewestListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNewestListModel.h; sourceTree = "<group>"; };
 		65DBE7551C283CB000E7BA5F /* ZZNewestListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNewestListModel.m; sourceTree = "<group>"; };
+		65E0A9B61C3ABC3C00C46F9D /* RankView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankView.h; sourceTree = "<group>"; };
+		65E0A9B71C3ABC3C00C46F9D /* RankView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankView.m; sourceTree = "<group>"; };
 		65E0B74E1C364667009E595E /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingViewController.h; path = ../SettingViewController.h; sourceTree = "<group>"; };
 		65E0B74F1C364667009E595E /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingViewController.m; path = ../SettingViewController.m; sourceTree = "<group>"; };
 		65E0B7511C3649FF009E595E /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
@@ -286,6 +289,8 @@
 				65E0B7551C36504F009E595E /* LoginViewController.m */,
 				65F0799B1C3830DE00B2681C /* LoginInputView.h */,
 				65F0799C1C3830DE00B2681C /* LoginInputView.m */,
+				65E0A9B61C3ABC3C00C46F9D /* RankView.h */,
+				65E0A9B71C3ABC3C00C46F9D /* RankView.m */,
 			);
 			path = SF;
 			sourceTree = "<group>";
@@ -485,6 +490,7 @@
 			files = (
 				653846921C0C84BA00561CFA /* ArticalViewController.m in Sources */,
 				65D9895B1C317D3E00975F89 /* ListCell.m in Sources */,
+				65E0A9B81C3ABC3C00C46F9D /* RankView.m in Sources */,
 				659A299E1C0C74F200B36B99 /* ViewController.m in Sources */,
 				65F9D2721C23131500AEA6B9 /* NavViewController.m in Sources */,
 				6567B8331C257A2800CA7002 /* SFTabBarViewController.m in Sources */,

@@ -17,6 +17,7 @@
 
 #import "profileCell.h"
 #import "MacroDefinition.h"
+#import "RankView.h"
 
 
 @interface profileCell ()
@@ -62,6 +63,9 @@
     _userNameAndLoginTipLabel.font = [UIFont systemFontOfSize:17];
     _userNameAndLoginTipLabel.textAlignment = NSTextAlignmentCenter;
     [self.contentView addSubview:_userNameAndLoginTipLabel];
+    _rankView = [[RankView alloc] initWithFrame:CGRectMake(0, 150, [UIScreen mainScreen].bounds.size.width, 65)];
+    [self.contentView addSubview:_rankView];
+
     
     
     
