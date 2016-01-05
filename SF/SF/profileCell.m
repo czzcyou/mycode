@@ -6,15 +6,6 @@
 //  Copyright © 2015年 CYZ. All rights reserved.
 //
 
-
-//
-//  ZZProfileCell.m
-//  MIX
-//
-//  Created by zhou on 15/12/25.
-//  Copyright © 2015年 jeff.zhou. All rights reserved.
-//
-
 #import "profileCell.h"
 #import "MacroDefinition.h"
 #import "RankView.h"

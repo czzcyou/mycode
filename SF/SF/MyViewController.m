@@ -31,7 +31,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [super viewDidLoad];
     self.view.backgroundColor = UIColorFromRGB(0xefeff4);
 //    - (void)configureTitles:(NSString *)titles{
 //    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 36, 18)];

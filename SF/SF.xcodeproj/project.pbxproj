@@ -16,6 +16,9 @@
 		653846981C0C84FB00561CFA /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653846971C0C84FB00561CFA /* FindViewController.m */; };
 		6538469B1C0C850D00561CFA /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6538469A1C0C850D00561CFA /* SearchViewController.m */; };
 		653846A11C0C853500561CFA /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653846A01C0C853500561CFA /* MyViewController.m */; };
+		654906841C3C00C0007F0F4C /* ScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 654906831C3C00C0007F0F4C /* ScrollViewCell.m */; };
+		654906871C3C0103007F0F4C /* NormalViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 654906861C3C0103007F0F4C /* NormalViewCell.m */; };
+		6549068B1C3C1073007F0F4C /* setting2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6549068A1C3C1073007F0F4C /* setting2.plist */; };
 		6555354A1C22DE7400FE6A22 /* ZZAnswerDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 655535471C22DE7400FE6A22 /* ZZAnswerDetailModel.m */; };
 		6555354B1C22DE7400FE6A22 /* ZZQuestionDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 655535491C22DE7400FE6A22 /* ZZQuestionDetailModel.m */; };
 		6567B8301C2579EE00CA7002 /* SFTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567B82F1C2579EE00CA7002 /* SFTabBarButton.m */; };
@@ -86,6 +89,11 @@
 		6538469A1C0C850D00561CFA /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		6538469F1C0C853500561CFA /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		653846A01C0C853500561CFA /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		654906821C3C00C0007F0F4C /* ScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewCell.h; sourceTree = "<group>"; };
+		654906831C3C00C0007F0F4C /* ScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewCell.m; sourceTree = "<group>"; };
+		654906851C3C0103007F0F4C /* NormalViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalViewCell.h; sourceTree = "<group>"; };
+		654906861C3C0103007F0F4C /* NormalViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalViewCell.m; sourceTree = "<group>"; };
+		6549068A1C3C1073007F0F4C /* setting2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = setting2.plist; sourceTree = "<group>"; };
 		655535461C22DE7400FE6A22 /* ZZAnswerDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZAnswerDetailModel.h; sourceTree = "<group>"; };
 		655535471C22DE7400FE6A22 /* ZZAnswerDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZAnswerDetailModel.m; sourceTree = "<group>"; };
 		655535481C22DE7400FE6A22 /* ZZQuestionDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZQuestionDetailModel.h; sourceTree = "<group>"; };
@@ -219,6 +227,7 @@
 		659A29951C0C74F200B36B99 /* SF */ = {
 			isa = PBXGroup;
 			children = (
+				6549068A1C3C1073007F0F4C /* setting2.plist */,
 				65E0B74E1C364667009E595E /* SettingViewController.h */,
 				65E0B74F1C364667009E595E /* SettingViewController.m */,
 				65178AA71C3404CF00361489 /* setting.plist */,
@@ -291,6 +300,10 @@
 				65F0799C1C3830DE00B2681C /* LoginInputView.m */,
 				65E0A9B61C3ABC3C00C46F9D /* RankView.h */,
 				65E0A9B71C3ABC3C00C46F9D /* RankView.m */,
+				654906821C3C00C0007F0F4C /* ScrollViewCell.h */,
+				654906831C3C00C0007F0F4C /* ScrollViewCell.m */,
+				654906851C3C0103007F0F4C /* NormalViewCell.h */,
+				654906861C3C0103007F0F4C /* NormalViewCell.m */,
 			);
 			path = SF;
 			sourceTree = "<group>";
@@ -431,6 +444,7 @@
 				65178AA81C3404CF00361489 /* setting.plist in Resources */,
 				65178AA61C3401C600361489 /* Assets.xcassets in Resources */,
 				659A29A11C0C74F200B36B99 /* Main.storyboard in Resources */,
+				6549068B1C3C1073007F0F4C /* setting2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +524,7 @@
 				659A29981C0C74F200B36B99 /* main.m in Sources */,
 				65DBE74E1C2838BE00E7BA5F /* ZZNewestVoteView.m in Sources */,
 				65DBE7561C283CB000E7BA5F /* ZZNewestListModel.m in Sources */,
+				654906871C3C0103007F0F4C /* NormalViewCell.m in Sources */,
 				6555354B1C22DE7400FE6A22 /* ZZQuestionDetailModel.m in Sources */,
 				6555354A1C22DE7400FE6A22 /* ZZAnswerDetailModel.m in Sources */,
 				65DBE74C1C2838BE00E7BA5F /* ZZNewestCell.m in Sources */,
@@ -521,6 +536,7 @@
 				65DBE74B1C2838BE00E7BA5F /* ZZHttpClient.m in Sources */,
 				65CC6B7D1C1343EF00DA50AE /* NewestViewController.m in Sources */,
 				65E0B7561C36504F009E595E /* LoginViewController.m in Sources */,
+				654906841C3C00C0007F0F4C /* ScrollViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
