@@ -65,26 +65,21 @@
     self.tableView.backgroundColor = UIColorFromRGB(0xefeff4);
    // self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, -1)];
   //  self.tableView.tableHeaderView = [[[UIView alloc] initWithFrame:CGRectMake(0,0,5,20)] autorelease];
+    self.scrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 160)];
+    self.scrollView.backgroundColor=[UIColor clearColor];
+    
+    self.scrollView.bounces=NO;
+    self.scrollView.showsHorizontalScrollIndicator=NO;
+    self.scrollView.showsVerticalScrollIndicator=NO;
+    
+    
+    self.scrollView.pagingEnabled=YES;
+    self.scrollView.contentSize=CGSizeMake(KImageCount * self.scrollView.bounds.size.width, 0);
+    self.scrollView.delegate=self;
+    
 }
 
--(UIScrollView *) scrollView
-{
-    if (_scrollView==nil) {
-        _scrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 160)];
-        _scrollView.backgroundColor=[UIColor clearColor];
-        [_tableView.tableHeaderView addSubview:_scrollView];
-        
-        _scrollView.bounces=NO;
-        _scrollView.showsHorizontalScrollIndicator=NO;
-        _scrollView.showsVerticalScrollIndicator=NO;
-        
-        _scrollView.pagingEnabled=YES;
-        _scrollView.contentSize=CGSizeMake(KImageCount * _scrollView.bounds.size.width, 0);
-        _scrollView.delegate=self;
-        
-        
-        
-    }
+
 
 /*
 #pragma mark - Navigation
