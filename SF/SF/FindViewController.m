@@ -9,8 +9,11 @@
 #import "FindViewController.h"
 #import "EXTScope.h"
 #import "MacroDefinition.h"
+#define KImageCount 2
 
-@interface FindViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface FindViewController () <UITableViewDataSource, UITableViewDelegate,UIScrollViewDelegate>
+@property  (nonatomic,strong) UIScrollView * scrollView;
+@property   (nonatomic,strong)UIPageControl *pageControl;
 
 @property (nonatomic, strong) UITableView *tableView;
 //@property (nonatomic, strong)  NSMutableArray *dataSourceArray;
@@ -63,6 +66,26 @@
    // self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, -1)];
   //  self.tableView.tableHeaderView = [[[UIView alloc] initWithFrame:CGRectMake(0,0,5,20)] autorelease];
 }
+
+-(UIScrollView *) scrollView
+{
+    if (_scrollView==nil) {
+        _scrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 160)];
+        _scrollView.backgroundColor=[UIColor clearColor];
+        [_tableView.tableHeaderView addSubview:_scrollView];
+        
+        _scrollView.bounces=NO;
+        _scrollView.showsHorizontalScrollIndicator=NO;
+        _scrollView.showsVerticalScrollIndicator=NO;
+        
+        _scrollView.pagingEnabled=YES;
+        _scrollView.contentSize=CGSizeMake(KImageCount * _scrollView.bounds.size.width, 0);
+        _scrollView.delegate=self;
+        
+        
+        
+    }
+
 /*
 #pragma mark - Navigation
 
@@ -73,7 +96,11 @@
 }
 */
 #pragma mark - UITableViewDataSource
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+
+    
+    
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+    {
     return 2;
 }
 
@@ -116,6 +143,7 @@
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 0)];
     headerView.backgroundColor =[UIColor greenColor];
+    
     return headerView;
     
 }
