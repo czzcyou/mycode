@@ -21,7 +21,6 @@
     return self;
 }
 
-
 - (void)configureSubViews {
     CGRect rect = CGRectMake(330, 0, 18, self.bounds.size.height);
     self.numLabel = [[UILabel alloc] initWithFrame:rect];

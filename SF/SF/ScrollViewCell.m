@@ -8,6 +8,7 @@
 
 #import "ScrollViewCell.h"
 #import "MacroDefinition.h" 
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #define KImageCount 2
 @interface ScrollViewCell()<UIScrollViewDelegate>
@@ -28,9 +29,21 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    
+  // http://sfault-activity.b0.upaiyun.com/415/443/4154430123-56790eafe012e_big
+   // http://sfault-activity.b0.upaiyun.com/315/040/3150407927-56096a5f8ccf2_big
     self.backgroundColor = kMainColor;
     [self configureSubviews];
+    
+ 
+UIImageView * imageView1 = [[UIImageView alloc]initWithFrame:self.ScrollView.bounds];;
+[imageView1 sd_setImageWithURL:[NSURL URLWithString:@"http://sfault-activity.b0.upaiyun.com/415/443/4154430123-56790eafe012e_big"]
+placeholderImage:[UIImage imageNamed:@"img_01.png"]];
+                        
+                                                            
+UIImageView * imageView2 = [[UIImageView alloc]initWithFrame:self.ScrollView.bounds];;
+[imageView2 sd_setImageWithURL:[NSURL URLWithString:@"http://sfault-activity.b0.upaiyun.com/315/040/3150407927-56096a5f8ccf2_big"]placeholderImage:[UIImage imageNamed:@"img_02.png"]];
+    
+    
     for (int i=0 ; i< KImageCount; i++) {
         NSString *imageName= [NSString stringWithFormat:@"img_%02d",i + 1];
         UIImage *image = [UIImage imageNamed:imageName];
@@ -38,8 +51,10 @@
         imageView.image=image;
         [self.ScrollView addSubview:imageView];
     }
+    
+    
     [self.ScrollView.subviews enumerateObjectsUsingBlock:^(UIImageView *imageView, NSUInteger idx,BOOL *stop){
-        
+        //ScrollView初始化的时候就会调用这个
          CGRect frame = imageView.frame;
         frame.origin.x=idx * frame.size.width;
         imageView.frame=frame;
