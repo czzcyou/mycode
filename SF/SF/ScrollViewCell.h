@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ScrollViewCell : UITableViewCell
+@property(nonatomic,strong)NSArray *imageUrls;
 
 @end

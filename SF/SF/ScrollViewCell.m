@@ -33,22 +33,12 @@
    // http://sfault-activity.b0.upaiyun.com/315/040/3150407927-56096a5f8ccf2_big
     self.backgroundColor = kMainColor;
     [self configureSubviews];
-    
- 
-UIImageView * imageView1 = [[UIImageView alloc]initWithFrame:self.ScrollView.bounds];;
-[imageView1 sd_setImageWithURL:[NSURL URLWithString:@"http://sfault-activity.b0.upaiyun.com/415/443/4154430123-56790eafe012e_big"]
-placeholderImage:[UIImage imageNamed:@"img_01.png"]];
-                        
-                                                            
-UIImageView * imageView2 = [[UIImageView alloc]initWithFrame:self.ScrollView.bounds];;
-[imageView2 sd_setImageWithURL:[NSURL URLWithString:@"http://sfault-activity.b0.upaiyun.com/315/040/3150407927-56096a5f8ccf2_big"]placeholderImage:[UIImage imageNamed:@"img_02.png"]];
-    
+    self.imageUrls=@[@"https://sfault-activity.b0.upaiyun.com/415/443/4154430123-56790eafe012e_big",@"https://sfault-activity.b0.upaiyun.com/315/040/3150407927-56096a5f8ccf2_big"];
     
     for (int i=0 ; i< KImageCount; i++) {
-        NSString *imageName= [NSString stringWithFormat:@"img_%02d",i + 1];
-        UIImage *image = [UIImage imageNamed:imageName];
+        
         UIImageView * imageView = [[UIImageView alloc]initWithFrame:self.ScrollView.bounds];
-        imageView.image=image;
+        [imageView sd_setImageWithURL:self.imageUrls[i] completed:^(UIImage *image,NSError *error,SDImageCacheType cacheType,NSURL *imageURL){}];
         [self.ScrollView addSubview:imageView];
     }
     
