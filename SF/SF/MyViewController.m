@@ -15,6 +15,7 @@
 #import "ZZHttpClient.h"  
 #import "LoginViewController.h" 
 #import "EXTScope.h"
+#import "ZZProfileModel.h"
 
 
 
@@ -23,7 +24,7 @@
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *settingItems;
 @property (nonatomic, strong) UILabel *userNameAndLoginTipLabel;
-
+@property   (nonatomic,strong)ZZProfileModel *profileModel;
 @end
 
 @implementation MyViewController
