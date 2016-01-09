@@ -8,7 +8,7 @@
 
 #import "ZZHttpClient.h"
 
-static NSString * const kBaseURL = @"http://api.segmentfault.com";
+static NSString * const kBaseURL = @"https://api.segmentfault.com";
 
 
 @implementation ZZHttpClient

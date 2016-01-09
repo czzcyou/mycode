@@ -11,6 +11,7 @@
 #import "MacroDefinition.h"
 #import "ZZHttpClient.h"
 #import "EXTScope.h"
+#import <FrameAccessor/ViewFrameAccessor.h>
 
 #import "Configuration.h"
 
@@ -43,7 +44,13 @@
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.view.backgroundColor = UIColorFromRGB(0xefeff4);
-    //[self configureTitles:@"登录"];
+    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 36, 18)];
+    titleLabel.text = @"登录";
+    titleLabel.textColor = [UIColor whiteColor];
+    titleLabel.backgroundColor = [UIColor clearColor];
+    titleLabel.font = [UIFont systemFontOfSize:18];
+    self.navigationItem.titleView = titleLabel;
+   
     [self configureSubViews];
     [self configureLeftBarItem];
 }
@@ -58,10 +65,10 @@
     // scrollView
     self.backgroundScrollView.contentSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height + 160);
     self.backgroundScrollView.bounces = YES;
-  //  [self.backgroundScrollView addSubview:self.loginInputView];
+    [self.backgroundScrollView addSubview:self.loginInputView];
     
     // 登录按钮
-//self.loginButton.frame = CGRectMake(0, CGRectGetMaxY(_loginInputView.frame) + 16, 346, 45);
+    self.loginButton.frame = CGRectMake(0, CGRectGetMaxY(_loginInputView.frame) + 16, 346, 45);
     self.loginButton.center = CGPointMake(self.view.bounds.size.width * 0.5, _loginButton.center.y);
     [self.backgroundScrollView addSubview:self.loginButton];
     
@@ -93,44 +100,46 @@
 
 #pragma mark - target action
 - (void)loginButtonDidPressed:(UIButton *)button {
-  //  [self showLoading];
     @weakify(self);
-//   // [[HttpClient sharedHTTPClient] requestLoginWithName:_loginInputView.emailText password:_loginInputView.passwordText SuccessBlock:^(id data) {
-// //       @strongify(self);
-// //       [self hideLoading];
-// //       ZZLoginModel *loginModel = [[ZZLoginModel alloc] initWithDictionary:data error:nil];
-//   //     if (loginModel.status == 0) {
-//            [ZZConfiguration sharedConfigration].token = loginModel.token;
-//            [ZZConfiguration sharedConfigration].userID = loginModel.user.userID;
-//            [self dismissViewControllerAnimated:YES completion:nil];
-//            if (self.finishLoginBlock) {
-//                self.finishLoginBlock();
-//            }
-//        }else {
-//            NSString *errorMessage = loginModel.mobile.error;
-//            [self showText:errorMessage];
-//            
-//        }
-//    } failBlock:^(id error) {
-//        @strongify(self);
-//        [self hideLoading];
-//        [self showText:@"服务器或网络异常,请重试"];
-//    }];
-    
+ [[ZZHttpClient sharedHTTPClient] requestLoginWithName:_loginInputView.emailText password:_loginInputView.passwordText SuccessBlock:^(id data) {
+          //  [ZZConfiguration sharedConfigration].token = loginModel.token;
+           // [ZZConfiguration sharedConfigration].userID = loginModel.user.userID;
+            [self dismissViewControllerAnimated:YES completion:nil];
+ //           if (self.finishLoginBlock) {
+ //               self.finishLoginBlock();
+  //          }
+     //   }else {
+         //   NSString *errorMessage = loginModel.mobile.error;
+           // [self showText:errorMessage];
+            
+  //      }
+ //   } failBlock:^(id error) {
+     //   @strongify(self);
+    //    [self hideLoading];
+      //  [self showText:@"服务器或网络异常,请重试"];
+ // }];
 }
 
-- (void)registerButtonDidPressed:(UIButton *)button {
-//    RegisterViewController *registerViewController = [[RegisterViewController alloc] init];
-//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:registerViewController];
-//    [self presentViewController:navigationController animated:YES completion:nil];
+  
+  
+- (void)registerButtonDidPressed:(UIButton *)button{
+    RegisterViewController *registerViewController = [[RegisterViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:registerViewController];
+    [self presentViewController:navigationController animated:YES completion:nil];
     
 }
+  
+- (void)retrivePasswordButtonDidPressed:(UIButton *)button {
+      NSLog(@"找回密码log");
+      
+      
+  }
 
 #pragma mark - setter and getter
-
 - (UIScrollView *)backgroundScrollView{
     if (_backgroundScrollView == nil) {
-        _backgroundScrollView = [[UIScrollView alloc] initWithFrame:self.view.
+        _backgroundScrollView = [[UIScrollView alloc]
+                                 initWithFrame:self.view.
                                  bounds];
         
         [self.view addSubview:_backgroundScrollView];

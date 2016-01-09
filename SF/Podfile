@@ -5,4 +5,4 @@ pod 'JSONModel'
 pod 'MBProgressHUD'
 pod 'MJRefresh'
 pod 'SDWebImage'
-
+pod 'FrameAccessor'
