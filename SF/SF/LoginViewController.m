@@ -98,42 +98,6 @@
     
 }
 
-#pragma mark - target action
-- (void)loginButtonDidPressed:(UIButton *)button {
-    @weakify(self);
- [[ZZHttpClient sharedHTTPClient] requestLoginWithName:_loginInputView.emailText password:_loginInputView.passwordText SuccessBlock:^(id data) {
-          //  [ZZConfiguration sharedConfigration].token = loginModel.token;
-           // [ZZConfiguration sharedConfigration].userID = loginModel.user.userID;
-            [self dismissViewControllerAnimated:YES completion:nil];
- //           if (self.finishLoginBlock) {
- //               self.finishLoginBlock();
-  //          }
-     //   }else {
-         //   NSString *errorMessage = loginModel.mobile.error;
-           // [self showText:errorMessage];
-            
-  //      }
- //   } failBlock:^(id error) {
-     //   @strongify(self);
-    //    [self hideLoading];
-      //  [self showText:@"服务器或网络异常,请重试"];
- // }];
-}
-
-  
-  
-- (void)registerButtonDidPressed:(UIButton *)button{
-    RegisterViewController *registerViewController = [[RegisterViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:registerViewController];
-    [self presentViewController:navigationController animated:YES completion:nil];
-    
-}
-  
-- (void)retrivePasswordButtonDidPressed:(UIButton *)button {
-      NSLog(@"找回密码log");
-      
-      
-  }
 
 #pragma mark - setter and getter
 - (UIScrollView *)backgroundScrollView{
