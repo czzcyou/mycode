@@ -48,6 +48,7 @@
 		65E0B7501C364667009E595E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0B74F1C364667009E595E /* SettingViewController.m */; };
 		65E0B7531C3649FF009E595E /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0B7521C3649FF009E595E /* Configuration.m */; };
 		65E0B7561C36504F009E595E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0B7551C36504F009E595E /* LoginViewController.m */; };
+		65E66A3B1C42B2CC009FBCC6 /* ZZConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E66A3A1C42B2CC009FBCC6 /* ZZConfiguration.m */; };
 		65F0799D1C3830DE00B2681C /* LoginInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F0799C1C3830DE00B2681C /* LoginInputView.m */; };
 		65F9D2721C23131500AEA6B9 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F9D2711C23131500AEA6B9 /* NavViewController.m */; };
 		F3915C1635E8D6537E55B270 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 130EE83BA7CCE95CD9DEC7D4 /* libPods.a */; };
@@ -156,6 +157,8 @@
 		65E0B7521C3649FF009E595E /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
 		65E0B7541C36504F009E595E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		65E0B7551C36504F009E595E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		65E66A391C42B2CC009FBCC6 /* ZZConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZConfiguration.h; sourceTree = "<group>"; };
+		65E66A3A1C42B2CC009FBCC6 /* ZZConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZConfiguration.m; sourceTree = "<group>"; };
 		65F0799B1C3830DE00B2681C /* LoginInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInputView.h; sourceTree = "<group>"; };
 		65F0799C1C3830DE00B2681C /* LoginInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInputView.m; sourceTree = "<group>"; };
 		65F9D2701C23131500AEA6B9 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
@@ -231,6 +234,8 @@
 		659A29951C0C74F200B36B99 /* SF */ = {
 			isa = PBXGroup;
 			children = (
+				65E66A391C42B2CC009FBCC6 /* ZZConfiguration.h */,
+				65E66A3A1C42B2CC009FBCC6 /* ZZConfiguration.m */,
 				65DD27221C400D2900253F31 /* ZZProfileModel.h */,
 				65DD27231C400D2900253F31 /* ZZProfileModel.m */,
 				6549068A1C3C1073007F0F4C /* setting2.plist */,
@@ -526,6 +531,7 @@
 			files = (
 				653846921C0C84BA00561CFA /* ArticalViewController.m in Sources */,
 				65D9895B1C317D3E00975F89 /* ListCell.m in Sources */,
+				65E66A3B1C42B2CC009FBCC6 /* ZZConfiguration.m in Sources */,
 				65E0A9B81C3ABC3C00C46F9D /* RankView.m in Sources */,
 				659A299E1C0C74F200B36B99 /* ViewController.m in Sources */,
 				65F9D2721C23131500AEA6B9 /* NavViewController.m in Sources */,
