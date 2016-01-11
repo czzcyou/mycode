@@ -49,6 +49,8 @@
 		65E0B7531C3649FF009E595E /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0B7521C3649FF009E595E /* Configuration.m */; };
 		65E0B7561C36504F009E595E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E0B7551C36504F009E595E /* LoginViewController.m */; };
 		65E66A3B1C42B2CC009FBCC6 /* ZZConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E66A3A1C42B2CC009FBCC6 /* ZZConfiguration.m */; };
+		65ED8E201C43FB41008D5D85 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ED8E1F1C43FB41008D5D85 /* RegisterViewController.m */; };
+		65ED8E231C43FB75008D5D85 /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ED8E221C43FB75008D5D85 /* RegisterView.m */; };
 		65F0799D1C3830DE00B2681C /* LoginInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F0799C1C3830DE00B2681C /* LoginInputView.m */; };
 		65F9D2721C23131500AEA6B9 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F9D2711C23131500AEA6B9 /* NavViewController.m */; };
 		F3915C1635E8D6537E55B270 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 130EE83BA7CCE95CD9DEC7D4 /* libPods.a */; };
@@ -159,6 +161,10 @@
 		65E0B7551C36504F009E595E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		65E66A391C42B2CC009FBCC6 /* ZZConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZConfiguration.h; sourceTree = "<group>"; };
 		65E66A3A1C42B2CC009FBCC6 /* ZZConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZConfiguration.m; sourceTree = "<group>"; };
+		65ED8E1E1C43FB41008D5D85 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		65ED8E1F1C43FB41008D5D85 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		65ED8E211C43FB75008D5D85 /* RegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterView.h; sourceTree = "<group>"; };
+		65ED8E221C43FB75008D5D85 /* RegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterView.m; sourceTree = "<group>"; };
 		65F0799B1C3830DE00B2681C /* LoginInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInputView.h; sourceTree = "<group>"; };
 		65F0799C1C3830DE00B2681C /* LoginInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInputView.m; sourceTree = "<group>"; };
 		65F9D2701C23131500AEA6B9 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
@@ -315,6 +321,10 @@
 				654906831C3C00C0007F0F4C /* ScrollViewCell.m */,
 				654906851C3C0103007F0F4C /* NormalViewCell.h */,
 				654906861C3C0103007F0F4C /* NormalViewCell.m */,
+				65ED8E1E1C43FB41008D5D85 /* RegisterViewController.h */,
+				65ED8E1F1C43FB41008D5D85 /* RegisterViewController.m */,
+				65ED8E211C43FB75008D5D85 /* RegisterView.h */,
+				65ED8E221C43FB75008D5D85 /* RegisterView.m */,
 			);
 			path = SF;
 			sourceTree = "<group>";
@@ -537,6 +547,7 @@
 				65F9D2721C23131500AEA6B9 /* NavViewController.m in Sources */,
 				6567B8331C257A2800CA7002 /* SFTabBarViewController.m in Sources */,
 				653846A11C0C853500561CFA /* MyViewController.m in Sources */,
+				65ED8E231C43FB75008D5D85 /* RegisterView.m in Sources */,
 				65CC6B831C13441800DA50AE /* UnanswerViewController.m in Sources */,
 				65E0B7501C364667009E595E /* SettingViewController.m in Sources */,
 				6531C9FD1C1719800088CDC9 /* AskViewController.m in Sources */,
@@ -556,6 +567,7 @@
 				654906871C3C0103007F0F4C /* NormalViewCell.m in Sources */,
 				6555354B1C22DE7400FE6A22 /* ZZQuestionDetailModel.m in Sources */,
 				6555354A1C22DE7400FE6A22 /* ZZAnswerDetailModel.m in Sources */,
+				65ED8E201C43FB41008D5D85 /* RegisterViewController.m in Sources */,
 				65DBE74C1C2838BE00E7BA5F /* ZZNewestCell.m in Sources */,
 				65DBE74A1C2838BE00E7BA5F /* ZZBaseResponseModel.m in Sources */,
 				65DBE7531C2838DD00E7BA5F /* EXTScope.m in Sources */,
